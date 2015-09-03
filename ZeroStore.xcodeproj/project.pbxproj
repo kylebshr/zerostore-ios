@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272B7ACC1B98C524005785AA /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B7ACB1B98C524005785AA /* ActionViewController.swift */; };
+		272B7ACF1B98C524005785AA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272B7ACD1B98C524005785AA /* MainInterface.storyboard */; };
+		272B7AD31B98C524005785AA /* EnterPassword.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 272B7AC91B98C524005785AA /* EnterPassword.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		272B7AD81B98CE7C005785AA /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; };
+		272B7AD91B98CF55005785AA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9151B98A03900619BD3 /* String+Extensions.swift */; };
+		272B7ADA1B98D618005785AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
+		272B7ADC1B98F041005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
+		272B7ADD1B98F079005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
+		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */; };
-		27FAF8F21B98926C00619BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* ViewController.swift */; };
+		27FAF8F21B98926C00619BD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */; };
 		27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
 		27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
 		27FAF8FA1B98926C00619BD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */; };
 		27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */; };
 		27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; };
 		27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9151B98A03900619BD3 /* String+Extensions.swift */; };
+		31B0E84BC8D758EE2921049F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D0B543176B7E6E804CF8AC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A69792873218B112B3842E2C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D0B543176B7E6E804CF8AC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		272B7AD11B98C524005785AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FAF8E21B98926C00619BD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 272B7AC81B98C524005785AA;
+			remoteInfo = EnterPassword;
+		};
 		27FAF9001B98926C00619BD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27FAF8E21B98926C00619BD3 /* Project object */;
@@ -28,11 +47,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		272B7AD71B98C524005785AA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				272B7AD31B98C524005785AA /* EnterPassword.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		272B7AC91B98C524005785AA /* EnterPassword.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnterPassword.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		272B7ACB1B98C524005785AA /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		272B7ACE1B98C524005785AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		272B7AD01B98C524005785AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272B7ADB1B98F041005785AA /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		27F53D571B99004400550CBE /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		27FAF8EA1B98926C00619BD3 /* ZeroStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FAF8EE1B98926C00619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27FAF8F11B98926C00619BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		27FAF8F41B98926C00619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27FAF8F61B98926C00619BD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27FAF8F91B98926C00619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -48,10 +88,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		272B7AC61B98C524005785AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272B7ADC1B98F041005785AA /* LocalAuthentication.framework in Frameworks */,
+				31B0E84BC8D758EE2921049F /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27FAF8E71B98926C00619BD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272B7ADD1B98F079005785AA /* LocalAuthentication.framework in Frameworks */,
 				A69792873218B112B3842E2C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,10 +125,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		272B7ACA1B98C524005785AA /* EnterPassword */ = {
+			isa = PBXGroup;
+			children = (
+				272B7ACB1B98C524005785AA /* ActionViewController.swift */,
+				272B7ACD1B98C524005785AA /* MainInterface.storyboard */,
+				272B7AD01B98C524005785AA /* Info.plist */,
+			);
+			path = EnterPassword;
+			sourceTree = "<group>";
+		};
+		27F53D541B99000500550CBE /* Classes and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF90F1B98928200619BD3 /* PasswordManager.swift */,
+				27FAF9151B98A03900619BD3 /* String+Extensions.swift */,
+			);
+			name = "Classes and Extensions";
+			sourceTree = "<group>";
+		};
+		27F53D551B99001300550CBE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */,
+				27F53D571B99004400550CBE /* ChangePasswordViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		27F53D561B99001B00550CBE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF8F31B98926C00619BD3 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		27FAF8E11B98926C00619BD3 = {
 			isa = PBXGroup;
 			children = (
 				27FAF8EC1B98926C00619BD3 /* ZeroStore */,
+				272B7ACA1B98C524005785AA /* EnterPassword */,
 				27FAF9021B98926C00619BD3 /* ZeroStoreTests */,
 				27FAF8EB1B98926C00619BD3 /* Products */,
 				173111CF04FB681F8017207E /* Pods */,
@@ -91,6 +178,7 @@
 			children = (
 				27FAF8EA1B98926C00619BD3 /* ZeroStore.app */,
 				27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */,
+				272B7AC91B98C524005785AA /* EnterPassword.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +187,10 @@
 			isa = PBXGroup;
 			children = (
 				27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */,
-				27FAF8F11B98926C00619BD3 /* ViewController.swift */,
-				27FAF90F1B98928200619BD3 /* PasswordManager.swift */,
-				27FAF9151B98A03900619BD3 /* String+Extensions.swift */,
-				27FAF8F31B98926C00619BD3 /* Main.storyboard */,
+				27F53D511B98F98A00550CBE /* Constants.swift */,
+				27F53D561B99001B00550CBE /* Storyboards */,
+				27F53D551B99001300550CBE /* View Controllers */,
+				27F53D541B99000500550CBE /* Classes and Extensions */,
 				27FAF8F61B98926C00619BD3 /* Images.xcassets */,
 				27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */,
 				27FAF8ED1B98926C00619BD3 /* Supporting Files */,
@@ -139,6 +227,7 @@
 		337B7BD557B8428D27D5587B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				272B7ADB1B98F041005785AA /* LocalAuthentication.framework */,
 				99D0B543176B7E6E804CF8AC /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -147,6 +236,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		272B7AC81B98C524005785AA /* EnterPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272B7AD61B98C524005785AA /* Build configuration list for PBXNativeTarget "EnterPassword" */;
+			buildPhases = (
+				583EB1DC26342CDF3F96C630 /* Check Pods Manifest.lock */,
+				272B7AC51B98C524005785AA /* Sources */,
+				272B7AC61B98C524005785AA /* Frameworks */,
+				272B7AC71B98C524005785AA /* Resources */,
+				3F527C426A492EAED81C66E6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnterPassword;
+			productName = EnterPassword;
+			productReference = 272B7AC91B98C524005785AA /* EnterPassword.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		27FAF8E91B98926C00619BD3 /* ZeroStore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27FAF9091B98926C00619BD3 /* Build configuration list for PBXNativeTarget "ZeroStore" */;
@@ -157,10 +265,12 @@
 				27FAF8E81B98926C00619BD3 /* Resources */,
 				170A49848F6B9A1C4D8B5B7E /* Embed Pods Frameworks */,
 				27A8E7F4C657E718A0C5F03E /* Copy Pods Resources */,
+				272B7AD71B98C524005785AA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				272B7AD21B98C524005785AA /* PBXTargetDependency */,
 			);
 			name = ZeroStore;
 			productName = ZeroStore;
@@ -196,6 +306,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Kyle Bashour";
 				TargetAttributes = {
+					272B7AC81B98C524005785AA = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					27FAF8E91B98926C00619BD3 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -220,11 +333,21 @@
 			targets = (
 				27FAF8E91B98926C00619BD3 /* ZeroStore */,
 				27FAF8FE1B98926C00619BD3 /* ZeroStoreTests */,
+				272B7AC81B98C524005785AA /* EnterPassword */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		272B7AC71B98C524005785AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272B7ADA1B98D618005785AA /* Images.xcassets in Resources */,
+				272B7ACF1B98C524005785AA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27FAF8E81B98926C00619BD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +398,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3F527C426A492EAED81C66E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		583EB1DC26342CDF3F96C630 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		EFDA2E911ACA91A1BC720417 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,13 +446,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		272B7AC51B98C524005785AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272B7AD81B98CE7C005785AA /* PasswordManager.swift in Sources */,
+				272B7AD91B98CF55005785AA /* String+Extensions.swift in Sources */,
+				272B7ACC1B98C524005785AA /* ActionViewController.swift in Sources */,
+				27F53D531B98F98D00550CBE /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27FAF8E61B98926C00619BD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F53D521B98F98A00550CBE /* Constants.swift in Sources */,
 				27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */,
 				27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */,
-				27FAF8F21B98926C00619BD3 /* ViewController.swift in Sources */,
+				27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */,
+				27FAF8F21B98926C00619BD3 /* SettingsViewController.swift in Sources */,
 				27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +481,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		272B7AD21B98C524005785AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 272B7AC81B98C524005785AA /* EnterPassword */;
+			targetProxy = 272B7AD11B98C524005785AA /* PBXContainerItemProxy */;
+		};
 		27FAF9011B98926C00619BD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 27FAF8E91B98926C00619BD3 /* ZeroStore */;
@@ -323,6 +494,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		272B7ACD1B98C524005785AA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				272B7ACE1B98C524005785AA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		27FAF8F31B98926C00619BD3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,6 +521,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		272B7AD41B98C524005785AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D873D2935D79FF5A63A787 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ActionTemplate;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = EnterPassword/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ZeroStore.EnterPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		272B7AD51B98C524005785AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF77F493C2EB06CA67BFCF5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ActionTemplate;
+				INFOPLIST_FILE = EnterPassword/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ZeroStore.EnterPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
+			};
+			name = Release;
+		};
 		27FAF9071B98926C00619BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -432,6 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZeroStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
@@ -447,6 +658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZeroStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +706,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		272B7AD61B98C524005785AA /* Build configuration list for PBXNativeTarget "EnterPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272B7AD41B98C524005785AA /* Debug */,
+				272B7AD51B98C524005785AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		27FAF8E51B98926C00619BD3 /* Build configuration list for PBXProject "ZeroStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
