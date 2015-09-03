@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */; };
+		27FAF8F21B98926C00619BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* ViewController.swift */; };
+		27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
+		27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
+		27FAF8FA1B98926C00619BD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */; };
+		27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */; };
+		27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; };
+		27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9151B98A03900619BD3 /* String+Extensions.swift */; };
+		A69792873218B112B3842E2C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D0B543176B7E6E804CF8AC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27FAF9001B98926C00619BD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FAF8E21B98926C00619BD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FAF8E91B98926C00619BD3;
+			remoteInfo = ZeroStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27FAF8EA1B98926C00619BD3 /* ZeroStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FAF8EE1B98926C00619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27FAF8F11B98926C00619BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27FAF8F41B98926C00619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27FAF8F61B98926C00619BD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27FAF8F91B98926C00619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FAF9041B98926C00619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroStoreTests.swift; sourceTree = "<group>"; };
+		27FAF90F1B98928200619BD3 /* PasswordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
+		27FAF9111B989DD300619BD3 /* ZeroStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZeroStore-Bridging-Header.h"; sourceTree = "<group>"; };
+		27FAF9151B98A03900619BD3 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		99D0B543176B7E6E804CF8AC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF77F493C2EB06CA67BFCF5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B6D873D2935D79FF5A63A787 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27FAF8E71B98926C00619BD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69792873218B112B3842E2C /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FAF8FC1B98926C00619BD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		173111CF04FB681F8017207E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6D873D2935D79FF5A63A787 /* Pods.debug.xcconfig */,
+				ACF77F493C2EB06CA67BFCF5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		27FAF8E11B98926C00619BD3 = {
+			isa = PBXGroup;
+			children = (
+				27FAF8EC1B98926C00619BD3 /* ZeroStore */,
+				27FAF9021B98926C00619BD3 /* ZeroStoreTests */,
+				27FAF8EB1B98926C00619BD3 /* Products */,
+				173111CF04FB681F8017207E /* Pods */,
+				337B7BD557B8428D27D5587B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27FAF8EB1B98926C00619BD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF8EA1B98926C00619BD3 /* ZeroStore.app */,
+				27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27FAF8EC1B98926C00619BD3 /* ZeroStore */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */,
+				27FAF8F11B98926C00619BD3 /* ViewController.swift */,
+				27FAF90F1B98928200619BD3 /* PasswordManager.swift */,
+				27FAF9151B98A03900619BD3 /* String+Extensions.swift */,
+				27FAF8F31B98926C00619BD3 /* Main.storyboard */,
+				27FAF8F61B98926C00619BD3 /* Images.xcassets */,
+				27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */,
+				27FAF8ED1B98926C00619BD3 /* Supporting Files */,
+				27FAF9111B989DD300619BD3 /* ZeroStore-Bridging-Header.h */,
+			);
+			path = ZeroStore;
+			sourceTree = "<group>";
+		};
+		27FAF8ED1B98926C00619BD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF8EE1B98926C00619BD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27FAF9021B98926C00619BD3 /* ZeroStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */,
+				27FAF9031B98926C00619BD3 /* Supporting Files */,
+			);
+			path = ZeroStoreTests;
+			sourceTree = "<group>";
+		};
+		27FAF9031B98926C00619BD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF9041B98926C00619BD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		337B7BD557B8428D27D5587B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99D0B543176B7E6E804CF8AC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27FAF8E91B98926C00619BD3 /* ZeroStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FAF9091B98926C00619BD3 /* Build configuration list for PBXNativeTarget "ZeroStore" */;
+			buildPhases = (
+				EFDA2E911ACA91A1BC720417 /* Check Pods Manifest.lock */,
+				27FAF8E61B98926C00619BD3 /* Sources */,
+				27FAF8E71B98926C00619BD3 /* Frameworks */,
+				27FAF8E81B98926C00619BD3 /* Resources */,
+				170A49848F6B9A1C4D8B5B7E /* Embed Pods Frameworks */,
+				27A8E7F4C657E718A0C5F03E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroStore;
+			productName = ZeroStore;
+			productReference = 27FAF8EA1B98926C00619BD3 /* ZeroStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27FAF8FE1B98926C00619BD3 /* ZeroStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FAF90C1B98926C00619BD3 /* Build configuration list for PBXNativeTarget "ZeroStoreTests" */;
+			buildPhases = (
+				27FAF8FB1B98926C00619BD3 /* Sources */,
+				27FAF8FC1B98926C00619BD3 /* Frameworks */,
+				27FAF8FD1B98926C00619BD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27FAF9011B98926C00619BD3 /* PBXTargetDependency */,
+			);
+			name = ZeroStoreTests;
+			productName = ZeroStoreTests;
+			productReference = 27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27FAF8E21B98926C00619BD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kyle Bashour";
+				TargetAttributes = {
+					27FAF8E91B98926C00619BD3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					27FAF8FE1B98926C00619BD3 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 27FAF8E91B98926C00619BD3;
+					};
+				};
+			};
+			buildConfigurationList = 27FAF8E51B98926C00619BD3 /* Build configuration list for PBXProject "ZeroStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27FAF8E11B98926C00619BD3;
+			productRefGroup = 27FAF8EB1B98926C00619BD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27FAF8E91B98926C00619BD3 /* ZeroStore */,
+				27FAF8FE1B98926C00619BD3 /* ZeroStoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27FAF8E81B98926C00619BD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */,
+				27FAF8FA1B98926C00619BD3 /* LaunchScreen.xib in Resources */,
+				27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FAF8FD1B98926C00619BD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		170A49848F6B9A1C4D8B5B7E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27A8E7F4C657E718A0C5F03E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFDA2E911ACA91A1BC720417 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27FAF8E61B98926C00619BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */,
+				27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */,
+				27FAF8F21B98926C00619BD3 /* ViewController.swift in Sources */,
+				27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FAF8FB1B98926C00619BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27FAF9011B98926C00619BD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FAF8E91B98926C00619BD3 /* ZeroStore */;
+			targetProxy = 27FAF9001B98926C00619BD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27FAF8F31B98926C00619BD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FAF8F41B98926C00619BD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FAF8F91B98926C00619BD3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27FAF9071B98926C00619BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27FAF9081B98926C00619BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27FAF90A1B98926C00619BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D873D2935D79FF5A63A787 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ZeroStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27FAF90B1B98926C00619BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF77F493C2EB06CA67BFCF5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ZeroStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		27FAF90D1B98926C00619BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZeroStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroStore.app/ZeroStore";
+			};
+			name = Debug;
+		};
+		27FAF90E1B98926C00619BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZeroStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroStore.app/ZeroStore";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27FAF8E51B98926C00619BD3 /* Build configuration list for PBXProject "ZeroStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FAF9071B98926C00619BD3 /* Debug */,
+				27FAF9081B98926C00619BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27FAF9091B98926C00619BD3 /* Build configuration list for PBXNativeTarget "ZeroStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FAF90A1B98926C00619BD3 /* Debug */,
+				27FAF90B1B98926C00619BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27FAF90C1B98926C00619BD3 /* Build configuration list for PBXNativeTarget "ZeroStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FAF90D1B98926C00619BD3 /* Debug */,
+				27FAF90E1B98926C00619BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27FAF8E21B98926C00619BD3 /* Project object */;
+}
