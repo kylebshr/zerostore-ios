@@ -1,3 +1,3 @@
 # zerostore-ios
 
-an iOS implementation of zerostore by joseph346
+an ios implementation of [zerostore](https://github.com/joseph346/zerostore) by joseph346
