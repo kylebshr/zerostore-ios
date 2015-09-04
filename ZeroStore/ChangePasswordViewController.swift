@@ -29,9 +29,9 @@ class ChangePasswordViewController: UITableViewController {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 
-    func showPasswordsDontMatch() {
+    func showAlert(title: String?, message: String?) {
 
-        let alert = UIAlertController(title: "Your Passwords Don't Match!", message: "Or maybe you didn't even type one in?", preferredStyle: .Alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         let tryAgainButton = UIAlertAction(title: "Try Again", style: .Default, handler: nil)
 
         alert.addAction(tryAgainButton)
@@ -39,12 +39,16 @@ class ChangePasswordViewController: UITableViewController {
     }
 
     func attemptToSaveNewPassword() {
-        if let newPassword = passwordTextField.text where passwordTextField.text == confirmPasswordTextField.text && newPassword != "" {
+
+        if passwordTextField.text != confirmPasswordTextField.text {
+            showAlert("Your Passwords Don't Match!", message: nil)
+        }
+        else if let newPassword = passwordTextField.text where newPassword != "" {
             SSKeychain.setPassword(newPassword, forService: Constants.Keychain.service, account: Constants.Keychain.account)
             dismissSelf()
         }
         else {
-            showPasswordsDontMatch()
+            showAlert("You Didn't Enter a Password!", message: nil)
         }
     }
 

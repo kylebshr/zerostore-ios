@@ -86,7 +86,7 @@ class ActionViewController: UITableViewController, UITextFieldDelegate {
         enableActivity(true)
 
         guard let masterPassword = masterPasswordTextField.text where masterPassword != "" else {
-            showAlert("Failed to Generate Password", message: "Please enter your master password")
+            showAlert("Failed to Generate Password", message: "Please enter your Master Password")
             enableActivity(false)
             return
         }
@@ -103,7 +103,7 @@ class ActionViewController: UITableViewController, UITextFieldDelegate {
         }
     }
 
-    func showAlert(title: String, message: String) {
+    func showAlert(title: String?, message: String?) {
 
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
 
