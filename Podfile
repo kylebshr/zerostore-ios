@@ -7,4 +7,3 @@ link_with 'yourApp', 'EnterPassword'
 
 pod 'NAChloride'
 pod 'SSKeychain'
-pod 'libsodium'
