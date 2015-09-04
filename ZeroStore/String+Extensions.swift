@@ -53,7 +53,7 @@ extension String {
 
 //        let digest = stringFromResult(result, length: digestLen)
 
-        let base64 = NSData(bytes: result, length: digestLen).base64EncodedStringWithOptions([])
+        let base64 = NSData(bytes: result, length: digestLen).base64EncodedStringWithOptions(nil)
 
         result.dealloc(digestLen)
 

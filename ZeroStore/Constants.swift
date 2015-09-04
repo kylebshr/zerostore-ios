@@ -14,4 +14,10 @@ struct Constants {
         static let service = "ZeroStore"
         static let account = "CurrentUser"
     }
+
+    struct Defaults {
+        static let length = "DefaultPasswordLength"
+        static let opened = "Opened"
+        static let suiteName = "group.com.kylebashour.ZeroStore"
+    }
 }
