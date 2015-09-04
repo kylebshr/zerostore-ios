@@ -15,20 +15,23 @@ class PasswordManager {
 
     static let sharedInstance = PasswordManager()
 
-    func generatePassword(masterPassword: String, userID: String, length: Int = 24) -> String {
+    func generatePassword(masterPassword: String, userID: String, length: Int = 24, completion: (String -> ())?) {
 
-        let salt = ("zerostore-salt" + userID as NSString).dataUsingEncoding(NSUTF8StringEncoding)!
-        let password = (masterPassword as NSString).dataUsingEncoding(NSUTF8StringEncoding)!
-        let data = try! NAScrypt.scrypt(password, salt: salt, n: 16384, r: 8, p: 1, length: 64)
-        let digest = userID.hmac(CryptoAlgorithm.SHA256, key: data)
-        let range = Range<String.Index>(start: digest.startIndex, end: digest.startIndex.advancedBy(length))
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
 
-        // DEBUG
+            let salt = ("zerostore-salt" + userID as NSString).dataUsingEncoding(NSUTF8StringEncoding)!
+            let password = (masterPassword as NSString).dataUsingEncoding(NSUTF8StringEncoding)!
+            let data = try! NAScrypt.scrypt(password, salt: salt, n: 16384, r: 8, p: 1, length: 64)
+            let digest = userID.hmac(CryptoAlgorithm.SHA256, key: data)
+            let range = Range<String.Index>(start: digest.startIndex, end: digest.startIndex.advancedBy(length))
 
-//        print("password used: \(masterPassword)")
-//        print("userID user: \(userID)")
-//        print("password generated: \(digest.substringWithRange(range))")
+            // DEBUG
 
-        return digest.substringWithRange(range)
+            //        print("password used: \(masterPassword)")
+            //        print("userID user: \(userID)")
+            //        print("password generated: \(digest.substringWithRange(range))")
+            
+            completion?(digest.substringWithRange(range))
+        }
     }
 }

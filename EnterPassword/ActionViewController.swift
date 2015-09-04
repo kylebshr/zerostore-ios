@@ -11,7 +11,7 @@ import MobileCoreServices
 import LocalAuthentication
 import SSKeychain
 
-class ActionViewController: UIViewController, UITextFieldDelegate {
+class ActionViewController: UITableViewController, UITextFieldDelegate {
 
     @IBOutlet weak var masterPasswordTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -44,10 +44,6 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
         authenticateWithTouchID()
     }
 
-    @IBAction func copyButtonPressed(sender: UIButton) {
-        generatePassword(nil)
-    }
-
     @IBAction func cancelButtonPressed(sender: AnyObject) {
         extensionContext!.completeRequestReturningItems(extensionContext!.inputItems, completionHandler: nil)
     }
@@ -64,7 +60,8 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
             context.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, error in
                 if success {
                     NSOperationQueue.mainQueue().addOperationWithBlock { _ in
-                        self.generatePassword(password)
+                        self.masterPasswordTextField.text = password
+                        self.generatePassword()
                     }
                 }
                 else if let code = error?.code where code == LAError.UserCancel.rawValue {
@@ -84,26 +81,26 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
         return password
     }
 
-    func generatePassword(genPassword: String?) {
+    func generatePassword() {
 
-        activityIndicator.startAnimating()
+        enableActivity(true)
 
-        guard let masterPassword = genPassword ?? masterPasswordTextField.text where masterPassword != "" else {
+        guard let masterPassword = masterPasswordTextField.text where masterPassword != "" else {
             showAlert("Failed to Generate Password", message: "Please enter your master password")
-            activityIndicator.stopAnimating()
+            enableActivity(false)
             return
         }
 
         guard let masterDomain = domain else {
             showAlert("Failed to Generate Password", message: "We were unable to fetch the service name. Please make sure you're using a compatible brower.")
-            activityIndicator.stopAnimating()
+            enableActivity(false)
             return
         }
 
-        let password = PasswordManager.sharedInstance.generatePassword(masterPassword, userID: masterDomain, length: defaults.integerForKey(Constants.Defaults.length))
-        UIPasteboard.generalPasteboard().string = password
-
-        extensionContext!.completeRequestReturningItems(extensionContext!.inputItems, completionHandler: nil)
+        PasswordManager.sharedInstance.generatePassword(masterPassword, userID: masterDomain, length: defaults.integerForKey(Constants.Defaults.length)) { password in
+            UIPasteboard.generalPasteboard().string = password
+            self.extensionContext!.completeRequestReturningItems(self.extensionContext!.inputItems, completionHandler: nil)
+        }
     }
 
     func showAlert(title: String, message: String) {
@@ -123,12 +120,26 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
         presentViewController(alert, animated: true, completion: nil)
     }
 
+    func enableActivity(enabled: Bool) {
+        enabled ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
+        tableView.userInteractionEnabled = !enabled
+    }
+
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.Portrait
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        generatePassword(nil)
+        generatePassword()
         return true
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+        if indexPath.section == 1 && indexPath.row == 0 {
+            generatePassword()
+        }
     }
 }
