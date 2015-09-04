@@ -16,6 +16,7 @@
 		272B7ADC1B98F041005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
 		272B7ADD1B98F079005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
 		27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27365DA51B9916C20036A180 /* NoCursorTextField.swift */; };
+		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordViewController.swift */; };
@@ -23,7 +24,6 @@
 		27FAF8F21B98926C00619BD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */; };
 		27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
 		27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
-		27FAF8FA1B98926C00619BD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */; };
 		27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */; };
 		27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; };
 		27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9151B98A03900619BD3 /* String+Extensions.swift */; };
@@ -71,6 +71,7 @@
 		27365DA51B9916C20036A180 /* NoCursorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCursorTextField.swift; sourceTree = "<group>"; };
 		27365DA71B991A4B0036A180 /* ZeroStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZeroStore.entitlements; sourceTree = "<group>"; };
 		27365DA81B991A740036A180 /* EnterPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EnterPassword.entitlements; sourceTree = "<group>"; };
+		2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27F53D571B99004400550CBE /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		27FAF8EA1B98926C00619BD3 /* ZeroStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +80,6 @@
 		27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		27FAF8F41B98926C00619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27FAF8F61B98926C00619BD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		27FAF8F91B98926C00619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FAF9041B98926C00619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroStoreTests.swift; sourceTree = "<group>"; };
@@ -163,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAF8F31B98926C00619BD3 /* Main.storyboard */,
+				2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -198,7 +199,6 @@
 				27F53D551B99001300550CBE /* View Controllers */,
 				27F53D541B99000500550CBE /* Classes and Extensions */,
 				27FAF8F61B98926C00619BD3 /* Images.xcassets */,
-				27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */,
 				27FAF8ED1B98926C00619BD3 /* Supporting Files */,
 				27FAF9111B989DD300619BD3 /* ZeroStore-Bridging-Header.h */,
 			);
@@ -377,8 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */,
 				27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */,
-				27FAF8FA1B98926C00619BD3 /* LaunchScreen.xib in Resources */,
 				27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,14 +534,6 @@
 				27FAF8F41B98926C00619BD3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		27FAF8F81B98926C00619BD3 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27FAF8F91B98926C00619BD3 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

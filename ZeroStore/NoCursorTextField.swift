@@ -10,8 +10,8 @@ import UIKit
 
 class NoCursorTextField: UITextField {
 
-    override func caretRectForPosition(position: UITextPosition!) -> CGRect {
-        return CGRect.zeroRect
+    override func caretRectForPosition(position: UITextPosition) -> CGRect {
+        return CGRect.zero
     }
 
     override func selectionRectsForRange(range: UITextRange) -> [AnyObject] {

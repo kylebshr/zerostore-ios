@@ -87,7 +87,7 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
         return pickerView.frame.width
     }
 
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "\(row + 8)"
     }
 

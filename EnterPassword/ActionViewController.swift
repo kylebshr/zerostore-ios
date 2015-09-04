@@ -23,7 +23,7 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         if let
-            item: AnyObject = extensionContext?.inputItems.first,
+            item = extensionContext?.inputItems.first,
             itemProvider = item.attachments??.first as? NSItemProvider
             where itemProvider.hasItemConformingToTypeIdentifier(kUTTypeURL as String)
         {
@@ -31,7 +31,7 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
                 if let url = url as? NSURL, domain = url.host {
                     let components = domain.componentsSeparatedByString(".")
                     if components.count >= 2 {
-                        self.domain = ".".join(components[components.count - 2..<components.count])
+                        self.domain = components[components.count - 2..<components.count].joinWithSeparator(".")
                     }
                 }
             }
@@ -88,23 +88,13 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
 
         activityIndicator.startAnimating()
 
-        var masterPassword: String!
-        var masterDomain: String!
-
-        if let genPassword = genPassword ?? masterPasswordTextField.text where masterPassword != "" {
-            masterPassword = genPassword
-        }
-        else {
+        guard let masterPassword = genPassword ?? masterPasswordTextField.text where masterPassword != "" else {
             showAlert("Failed to Generate Password", message: "Please enter your master password")
             activityIndicator.stopAnimating()
             return
         }
 
-        if let domain = domain {
-            masterDomain = domain
-        }
-        else {
-
+        guard let masterDomain = domain else {
             showAlert("Failed to Generate Password", message: "We were unable to fetch the service name. Please make sure you're using a compatible brower.")
             activityIndicator.stopAnimating()
             return
@@ -133,12 +123,11 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
         presentViewController(alert, animated: true, completion: nil)
     }
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-
         generatePassword(nil)
         return true
     }
