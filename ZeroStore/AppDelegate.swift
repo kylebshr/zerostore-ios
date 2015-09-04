@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)!
+
+        if !defaults.boolForKey(Constants.Defaults.opened) {
+            defaults.setBool(true, forKey: Constants.Defaults.opened)
+            defaults.setInteger(24, forKey: Constants.Defaults.length)
+            defaults.synchronize()
+        }
+
         return true
     }
 

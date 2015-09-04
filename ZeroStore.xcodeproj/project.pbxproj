@@ -15,9 +15,10 @@
 		272B7ADA1B98D618005785AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
 		272B7ADC1B98F041005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
 		272B7ADD1B98F079005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
-		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
-		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
-		27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27365DA51B9916C20036A180 /* NoCursorTextField.swift */; };
+		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
+		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
+		27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordViewController.swift */; };
 		27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */; };
 		27FAF8F21B98926C00619BD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */; };
 		27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
@@ -67,6 +68,9 @@
 		272B7ACE1B98C524005785AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		272B7AD01B98C524005785AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272B7ADB1B98F041005785AA /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		27365DA51B9916C20036A180 /* NoCursorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCursorTextField.swift; sourceTree = "<group>"; };
+		27365DA71B991A4B0036A180 /* ZeroStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZeroStore.entitlements; sourceTree = "<group>"; };
+		27365DA81B991A740036A180 /* EnterPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EnterPassword.entitlements; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27F53D571B99004400550CBE /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		27FAF8EA1B98926C00619BD3 /* ZeroStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,7 @@
 		272B7ACA1B98C524005785AA /* EnterPassword */ = {
 			isa = PBXGroup;
 			children = (
+				27365DA81B991A740036A180 /* EnterPassword.entitlements */,
 				272B7ACB1B98C524005785AA /* ActionViewController.swift */,
 				272B7ACD1B98C524005785AA /* MainInterface.storyboard */,
 				272B7AD01B98C524005785AA /* Info.plist */,
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAF90F1B98928200619BD3 /* PasswordManager.swift */,
+				27365DA51B9916C20036A180 /* NoCursorTextField.swift */,
 				27FAF9151B98A03900619BD3 /* String+Extensions.swift */,
 			);
 			name = "Classes and Extensions";
@@ -202,6 +208,7 @@
 		27FAF8ED1B98926C00619BD3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27365DA71B991A4B0036A180 /* ZeroStore.entitlements */,
 				27FAF8EE1B98926C00619BD3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -308,9 +315,27 @@
 				TargetAttributes = {
 					272B7AC81B98C524005785AA = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZEAD23GG77;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					27FAF8E91B98926C00619BD3 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = ZEAD23GG77;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					27FAF8FE1B98926C00619BD3 = {
 						CreatedOnToolsVersion = 6.4;
@@ -467,6 +492,7 @@
 				27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */,
 				27FAF8F21B98926C00619BD3 /* SettingsViewController.swift in Sources */,
 				27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */,
+				27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,14 +552,19 @@
 			baseConfigurationReference = B6D873D2935D79FF5A63A787 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ActionTemplate;
+				CODE_SIGN_ENTITLEMENTS = EnterPassword/EnterPassword.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = EnterPassword/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ZeroStore.EnterPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -542,13 +573,18 @@
 			baseConfigurationReference = ACF77F493C2EB06CA67BFCF5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ActionTemplate;
+				CODE_SIGN_ENTITLEMENTS = EnterPassword/EnterPassword.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EnterPassword/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ZeroStore.EnterPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -642,13 +678,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ZeroStore/ZeroStore.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZeroStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -658,12 +699,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ZeroStore/ZeroStore.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZeroStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylebashour.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -9,15 +9,35 @@
 import UIKit
 import SSKeychain
 
-class SettingsViewController: UITableViewController {
+class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var serviceTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var defaultLengthTextField: UITextField!
+
+    let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)!
+    let lengthPicker = UIPickerView()
+    var doneBar: UIToolbar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        lengthPicker.delegate = self
+        lengthPicker.dataSource = self
+
+        // create a done button that dismisses the time picker
+        let doneBarButton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "dismissPicker")
+        // add the button to a toolbar
+        doneBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 44))
+        doneBar.backgroundColor = UIColor.whiteColor()
+        doneBar.items = [doneBarButton]
+
+        defaultLengthTextField.inputView = lengthPicker
+        defaultLengthTextField.inputAccessoryView = doneBar
+        defaultLengthTextField.text = "\(defaults.integerForKey(Constants.Defaults.length))"
+    }
+
+    func dismissPicker() {
+        saveCurrentLength()
+        defaultLengthTextField.resignFirstResponder()
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -42,5 +62,36 @@ class SettingsViewController: UITableViewController {
                 presentViewController(alert, animated: true, completion: nil)
             }
         }
+        if indexPath.section == 1 && indexPath.row == 0 {
+            defaultLengthTextField.becomeFirstResponder()
+        }
+    }
+
+    func saveCurrentLength() {
+        let selectedLength = lengthPicker.selectedRowInComponent(0) + 8
+        defaults.setInteger(selectedLength, forKey: Constants.Defaults.length)
+        defaults.synchronize()
+        defaultLengthTextField.text = "\(selectedLength)"
+        view.layoutIfNeeded()
+    }
+
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 64 - 7
+    }
+
+    func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        return pickerView.frame.width
+    }
+
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return "\(row + 8)"
+    }
+
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        saveCurrentLength()
     }
 }

@@ -17,12 +17,13 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     var domain: String?
+    let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let
-            item = extensionContext?.inputItems.first,
+            item: AnyObject = extensionContext?.inputItems.first,
             itemProvider = item.attachments??.first as? NSItemProvider
             where itemProvider.hasItemConformingToTypeIdentifier(kUTTypeURL as String)
         {
@@ -30,7 +31,7 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
                 if let url = url as? NSURL, domain = url.host {
                     let components = domain.componentsSeparatedByString(".")
                     if components.count >= 2 {
-                        self.domain = components[components.count - 2..<components.count].joinWithSeparator(".")
+                        self.domain = ".".join(components[components.count - 2..<components.count])
                     }
                 }
             }
@@ -83,26 +84,33 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
         return password
     }
 
-    func generatePassword(withPassword: String?) {
+    func generatePassword(genPassword: String?) {
 
         activityIndicator.startAnimating()
 
-        guard let masterPassword = withPassword ?? masterPasswordTextField.text where masterPassword != "" else {
+        var masterPassword: String!
+        var masterDomain: String!
 
+        if let genPassword = genPassword ?? masterPasswordTextField.text where masterPassword != "" {
+            masterPassword = genPassword
+        }
+        else {
             showAlert("Failed to Generate Password", message: "Please enter your master password")
             activityIndicator.stopAnimating()
             return
         }
 
-        guard let domain = domain else {
+        if let domain = domain {
+            masterDomain = domain
+        }
+        else {
 
             showAlert("Failed to Generate Password", message: "We were unable to fetch the service name. Please make sure you're using a compatible brower.")
             activityIndicator.stopAnimating()
             return
         }
 
-        let password = PasswordManager.sharedInstance.generatePassword(masterPassword, userID: domain)
-        print(password)
+        let password = PasswordManager.sharedInstance.generatePassword(masterPassword, userID: masterDomain, length: defaults.integerForKey(Constants.Defaults.length))
         UIPasteboard.generalPasteboard().string = password
 
         extensionContext!.completeRequestReturningItems(extensionContext!.inputItems, completionHandler: nil)
@@ -125,8 +133,8 @@ class ActionViewController: UIViewController, UITextFieldDelegate {
         presentViewController(alert, animated: true, completion: nil)
     }
 
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.Portrait
+    override func supportedInterfaceOrientations() -> Int {
+        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
