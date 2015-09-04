@@ -10,7 +10,7 @@
         <!--ZeroStore Settings-->
         <scene sceneID="YHa-uT-fdP">
             <objects>
-                <tableViewController id="vXV-af-lxN" customClass="SettingsViewController" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vXV-af-lxN" customClass="SettingsVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="3Oe-n9-Wfq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@ If you don't set your password here, we never save it anywhere.</string>
         <!--Set Master Password-->
         <scene sceneID="zEI-kd-HcR">
             <objects>
-                <tableViewController id="h1r-Tg-0hv" customClass="ChangePasswordViewController" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="h1r-Tg-0hv" customClass="ChangePasswordVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Bou-33-EDZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

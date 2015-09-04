@@ -9,7 +9,7 @@
 import UIKit
 import SSKeychain
 
-class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var defaultLengthTextField: UITextField!
 

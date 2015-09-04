@@ -11,7 +11,7 @@ import MobileCoreServices
 import LocalAuthentication
 import SSKeychain
 
-class ActionViewController: UITableViewController, UITextFieldDelegate {
+class ActionVC: UITableViewController, UITextFieldDelegate {
 
     @IBOutlet weak var masterPasswordTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!

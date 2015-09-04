@@ -8,7 +8,7 @@
         <!--ZeroStore-->
         <scene sceneID="img-Ez-inc">
             <objects>
-                <tableViewController id="AMo-TS-zLz" customClass="ActionViewController" customModule="EnterPassword" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="AMo-TS-zLz" customClass="ActionVC" customModule="EnterPassword" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Rq3-m2-Qb8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

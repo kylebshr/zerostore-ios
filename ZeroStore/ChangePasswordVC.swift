@@ -9,7 +9,7 @@
 import UIKit
 import SSKeychain
 
-class ChangePasswordViewController: UITableViewController {
+class ChangePasswordVC: UITableViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!

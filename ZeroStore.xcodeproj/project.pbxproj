@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		272B7ACC1B98C524005785AA /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B7ACB1B98C524005785AA /* ActionViewController.swift */; };
+		272B7ACC1B98C524005785AA /* ActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B7ACB1B98C524005785AA /* ActionVC.swift */; };
 		272B7ACF1B98C524005785AA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272B7ACD1B98C524005785AA /* MainInterface.storyboard */; };
 		272B7AD31B98C524005785AA /* EnterPassword.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 272B7AC91B98C524005785AA /* EnterPassword.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		272B7AD81B98CE7C005785AA /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; };
@@ -19,9 +19,9 @@
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
-		27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordViewController.swift */; };
+		27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordVC.swift */; };
 		27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */; };
-		27FAF8F21B98926C00619BD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */; };
+		27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* SettingsVC.swift */; };
 		27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
 		27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
 		27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */; };
@@ -64,7 +64,7 @@
 
 /* Begin PBXFileReference section */
 		272B7AC91B98C524005785AA /* EnterPassword.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnterPassword.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		272B7ACB1B98C524005785AA /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		272B7ACB1B98C524005785AA /* ActionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionVC.swift; sourceTree = "<group>"; };
 		272B7ACE1B98C524005785AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		272B7AD01B98C524005785AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272B7ADB1B98F041005785AA /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -73,11 +73,11 @@
 		27365DA81B991A740036A180 /* EnterPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EnterPassword.entitlements; sourceTree = "<group>"; };
 		2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		27F53D571B99004400550CBE /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		27F53D571B99004400550CBE /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		27FAF8EA1B98926C00619BD3 /* ZeroStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FAF8EE1B98926C00619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		27FAF8F11B98926C00619BD3 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		27FAF8F41B98926C00619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27FAF8F61B98926C00619BD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				27365DA81B991A740036A180 /* EnterPassword.entitlements */,
-				272B7ACB1B98C524005785AA /* ActionViewController.swift */,
+				272B7ACB1B98C524005785AA /* ActionVC.swift */,
 				272B7ACD1B98C524005785AA /* MainInterface.storyboard */,
 				272B7AD01B98C524005785AA /* Info.plist */,
 			);
@@ -153,8 +153,8 @@
 		27F53D551B99001300550CBE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				27FAF8F11B98926C00619BD3 /* SettingsViewController.swift */,
-				27F53D571B99004400550CBE /* ChangePasswordViewController.swift */,
+				27FAF8F11B98926C00619BD3 /* SettingsVC.swift */,
+				27F53D571B99004400550CBE /* ChangePasswordVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -477,7 +477,7 @@
 			files = (
 				272B7AD81B98CE7C005785AA /* PasswordManager.swift in Sources */,
 				272B7AD91B98CF55005785AA /* String+Extensions.swift in Sources */,
-				272B7ACC1B98C524005785AA /* ActionViewController.swift in Sources */,
+				272B7ACC1B98C524005785AA /* ActionVC.swift in Sources */,
 				27F53D531B98F98D00550CBE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,8 +489,8 @@
 				27F53D521B98F98A00550CBE /* Constants.swift in Sources */,
 				27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */,
 				27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */,
-				27F53D581B99004400550CBE /* ChangePasswordViewController.swift in Sources */,
-				27FAF8F21B98926C00619BD3 /* SettingsViewController.swift in Sources */,
+				27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */,
+				27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */,
 				27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */,
 				27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */,
 			);
