@@ -56,7 +56,7 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         if indexPath.section == 2 && indexPath.row == 0 {
             removeSavedPassword()

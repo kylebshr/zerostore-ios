@@ -136,7 +136,7 @@ class ActionVC: UITableViewController, UITextFieldDelegate {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         if indexPath.section == 1 && indexPath.row == 0 {
             generatePassword()
