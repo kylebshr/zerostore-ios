@@ -9,7 +9,7 @@
 import UIKit
 import SSKeychain
 
-class ChangePasswordVC: UITableViewController {
+class ChangePasswordVC: UITableViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
@@ -58,5 +58,15 @@ class ChangePasswordVC: UITableViewController {
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
             attemptToSaveNewPassword()
         }
+    }
+
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField === passwordTextField {
+            confirmPasswordTextField.becomeFirstResponder()
+        }
+        else if textField === confirmPasswordTextField {
+            attemptToSaveNewPassword()
+        }
+        return true
     }
 }
