@@ -25,10 +25,11 @@ class SettingsViewController: UITableViewController, UIPickerViewDelegate, UIPic
 
         // create a done button that dismisses the time picker
         let doneBarButton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "dismissPicker")
+        let spacing = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
         // add the button to a toolbar
         doneBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 44))
         doneBar.backgroundColor = UIColor.whiteColor()
-        doneBar.items = [doneBarButton]
+        doneBar.items = [spacing, doneBarButton]
 
         defaultLengthTextField.inputView = lengthPicker
         defaultLengthTextField.inputAccessoryView = doneBar
