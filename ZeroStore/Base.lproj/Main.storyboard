@@ -314,7 +314,7 @@ If you don't set your password here, we never save it anywhere.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="LargeIcon" width="1024" height="1024"/>
+        <image name="LargeIcon" width="118" height="118"/>
     </resources>
     <color key="tintColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
