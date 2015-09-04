@@ -20,6 +20,8 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let defaultLength = defaults.integerForKey(Constants.Defaults.length)
+
         lengthPicker.delegate = self
         lengthPicker.dataSource = self
 
@@ -33,7 +35,9 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
 
         defaultLengthTextField.inputView = lengthPicker
         defaultLengthTextField.inputAccessoryView = doneBar
-        defaultLengthTextField.text = "\(defaults.integerForKey(Constants.Defaults.length))"
+        defaultLengthTextField.text = "\(defaultLength)"
+
+        lengthPicker.selectRow(defaultLength - 8, inComponent: 0, animated: false)
     }
 
     func dismissPicker() {
@@ -52,7 +56,7 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
 
         if indexPath.section == 2 && indexPath.row == 0 {
             removeSavedPassword()

@@ -55,7 +55,7 @@ class ChangePasswordVC: UITableViewController, UITextFieldDelegate {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
         if indexPath.section == 1 && indexPath.row == 0 {
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            tableView.deselectRowAtIndexPath(indexPath, animated: false)
             attemptToSaveNewPassword()
         }
     }
