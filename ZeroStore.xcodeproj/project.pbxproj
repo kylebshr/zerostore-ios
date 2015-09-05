@@ -24,6 +24,7 @@
 		27414B2E1B9A8B2400B490C5 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */; settings = {ASSET_TAGS = (); }; };
 		27414B301B9A905500B490C5 /* TutorialContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */; settings = {ASSET_TAGS = (); }; };
 		274AF6C51B9B757F00AF6DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
+		274AF6C71B9B8C0900AF6DFB /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AF6C61B9B8C0900AF6DFB /* TutorialPageVC.swift */; settings = {ASSET_TAGS = (); }; };
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
@@ -82,6 +83,7 @@
 		27414B2B1B9A88BF00B490C5 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialContainerVC.swift; sourceTree = "<group>"; };
+		274AF6C61B9B8C0900AF6DFB /* TutorialPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageVC.swift; sourceTree = "<group>"; };
 		2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27F53D571B99004400550CBE /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
@@ -151,6 +153,16 @@
 			path = EnterPassword;
 			sourceTree = "<group>";
 		};
+		274AF6C81B9B8C0D00AF6DFB /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */,
+				27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */,
+				274AF6C61B9B8C0900AF6DFB /* TutorialPageVC.swift */,
+			);
+			name = Tutorial;
+			sourceTree = "<group>";
+		};
 		27F53D541B99000500550CBE /* Classes and Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +178,7 @@
 			children = (
 				27FAF8F11B98926C00619BD3 /* SettingsVC.swift */,
 				27F53D571B99004400550CBE /* ChangePasswordVC.swift */,
-				27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */,
-				27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */,
+				274AF6C81B9B8C0D00AF6DFB /* Tutorial */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -495,6 +506,7 @@
 				27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */,
 				27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */,
 				27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */,
+				274AF6C71B9B8C0900AF6DFB /* TutorialPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
