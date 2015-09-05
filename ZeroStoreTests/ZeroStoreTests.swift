@@ -9,28 +9,40 @@
 import UIKit
 import XCTest
 
-class ZeroStoreTests: XCTestCase {
-    
+class TestPasswordGeneration: XCTestCase {
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    func testShortPassword() {
+
+        let expectation = expectationWithDescription("Short Password")
+
+        PasswordManager.sharedInstance.generatePassword(TestConstants.shortMasterPassword, userID: TestConstants.shortGoogleURL, length: 24) { password in
+            XCTAssert(password == TestConstants.shortMasterSolution)
+            expectation.fulfill()
         }
+
+
+        waitForExpectationsWithTimeout(2, handler: nil)
     }
-    
+
+    func testLongPassword() {
+
+        let expectation = expectationWithDescription("Long Password")
+
+        PasswordManager.sharedInstance.generatePassword(TestConstants.longMasterPassword, userID: TestConstants.shortGoogleURL, length: 24) { password in
+            XCTAssert(password == TestConstants.longMasterSolution)
+            expectation.fulfill()
+        }
+
+        waitForExpectationsWithTimeout(2, handler: nil)
+    }
 }
