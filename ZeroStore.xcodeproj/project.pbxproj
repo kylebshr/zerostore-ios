@@ -23,8 +23,10 @@
 		27414B2C1B9A88BF00B490C5 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27414B2B1B9A88BF00B490C5 /* Tutorial.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27414B2E1B9A8B2400B490C5 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */; settings = {ASSET_TAGS = (); }; };
 		27414B301B9A905500B490C5 /* TutorialContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */; settings = {ASSET_TAGS = (); }; };
+		2742D7491B9B9B7E005061CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
 		274AF6C51B9B757F00AF6DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
 		274AF6C71B9B8C0900AF6DFB /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AF6C61B9B8C0900AF6DFB /* TutorialPageVC.swift */; settings = {ASSET_TAGS = (); }; };
+		274AF6D01B9B992700AF6DFB /* ZeroStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */; };
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
@@ -46,6 +48,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 272B7AC81B98C524005785AA;
 			remoteInfo = EnterPassword;
+		};
+		274AF6D21B9B992700AF6DFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FAF8E21B98926C00619BD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FAF8E91B98926C00619BD3;
+			remoteInfo = ZeroStore;
 		};
 		27FAF9001B98926C00619BD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -84,6 +93,9 @@
 		27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialContainerVC.swift; sourceTree = "<group>"; };
 		274AF6C61B9B8C0900AF6DFB /* TutorialPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageVC.swift; sourceTree = "<group>"; };
+		274AF6CD1B9B992700AF6DFB /* ZeroStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroStoreUITests.swift; sourceTree = "<group>"; };
+		274AF6D11B9B992700AF6DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27F53D571B99004400550CBE /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
@@ -111,6 +123,13 @@
 			files = (
 				272B7ADC1B98F041005785AA /* LocalAuthentication.framework in Frameworks */,
 				31B0E84BC8D758EE2921049F /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274AF6CA1B9B992700AF6DFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +182,15 @@
 			name = Tutorial;
 			sourceTree = "<group>";
 		};
+		274AF6CE1B9B992700AF6DFB /* ZeroStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */,
+				274AF6D11B9B992700AF6DFB /* Info.plist */,
+			);
+			path = ZeroStoreUITests;
+			sourceTree = "<group>";
+		};
 		27F53D541B99000500550CBE /* Classes and Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +227,7 @@
 				27FAF8EC1B98926C00619BD3 /* ZeroStore */,
 				272B7ACA1B98C524005785AA /* EnterPassword */,
 				27FAF9021B98926C00619BD3 /* ZeroStoreTests */,
+				274AF6CE1B9B992700AF6DFB /* ZeroStoreUITests */,
 				27FAF8EB1B98926C00619BD3 /* Products */,
 				173111CF04FB681F8017207E /* Pods */,
 				337B7BD557B8428D27D5587B /* Frameworks */,
@@ -211,6 +240,7 @@
 				27FAF8EA1B98926C00619BD3 /* ZeroStore.app */,
 				27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */,
 				272B7AC91B98C524005785AA /* EnterPassword.appex */,
+				274AF6CD1B9B992700AF6DFB /* ZeroStoreUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,6 +317,24 @@
 			productReference = 272B7AC91B98C524005785AA /* EnterPassword.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		274AF6CC1B9B992700AF6DFB /* ZeroStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274AF6D41B9B992700AF6DFB /* Build configuration list for PBXNativeTarget "ZeroStoreUITests" */;
+			buildPhases = (
+				274AF6C91B9B992700AF6DFB /* Sources */,
+				274AF6CA1B9B992700AF6DFB /* Frameworks */,
+				274AF6CB1B9B992700AF6DFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274AF6D31B9B992700AF6DFB /* PBXTargetDependency */,
+			);
+			name = ZeroStoreUITests;
+			productName = ZeroStoreUITests;
+			productReference = 274AF6CD1B9B992700AF6DFB /* ZeroStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		27FAF8E91B98926C00619BD3 /* ZeroStore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27FAF9091B98926C00619BD3 /* Build configuration list for PBXNativeTarget "ZeroStore" */;
@@ -350,6 +398,10 @@
 							};
 						};
 					};
+					274AF6CC1B9B992700AF6DFB = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 27FAF8E91B98926C00619BD3;
+					};
 					27FAF8E91B98926C00619BD3 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = ZEAD23GG77;
@@ -382,8 +434,9 @@
 			projectRoot = "";
 			targets = (
 				27FAF8E91B98926C00619BD3 /* ZeroStore */,
-				27FAF8FE1B98926C00619BD3 /* ZeroStoreTests */,
 				272B7AC81B98C524005785AA /* EnterPassword */,
+				27FAF8FE1B98926C00619BD3 /* ZeroStoreTests */,
+				274AF6CC1B9B992700AF6DFB /* ZeroStoreUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,6 +448,13 @@
 			files = (
 				272B7ADA1B98D618005785AA /* Images.xcassets in Resources */,
 				272B7ACF1B98C524005785AA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274AF6CB1B9B992700AF6DFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +553,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		274AF6C91B9B992700AF6DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274AF6D01B9B992700AF6DFB /* ZeroStoreUITests.swift in Sources */,
+				2742D7491B9B9B7E005061CD /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27FAF8E61B98926C00619BD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,6 +598,11 @@
 			isa = PBXTargetDependency;
 			target = 272B7AC81B98C524005785AA /* EnterPassword */;
 			targetProxy = 272B7AD11B98C524005785AA /* PBXContainerItemProxy */;
+		};
+		274AF6D31B9B992700AF6DFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FAF8E91B98926C00619BD3 /* ZeroStore */;
+			targetProxy = 274AF6D21B9B992700AF6DFB /* PBXContainerItemProxy */;
 		};
 		27FAF9011B98926C00619BD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -595,6 +669,33 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ZeroStore/ZeroStore-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		274AF6D51B9B992700AF6DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = ZeroStoreUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ZeroStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZeroStore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		274AF6D61B9B992700AF6DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZeroStoreUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylebashour.ZeroStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZeroStore;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -769,6 +870,15 @@
 			buildConfigurations = (
 				272B7AD41B98C524005785AA /* Debug */,
 				272B7AD51B98C524005785AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274AF6D41B9B992700AF6DFB /* Build configuration list for PBXNativeTarget "ZeroStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274AF6D51B9B992700AF6DFB /* Debug */,
+				274AF6D61B9B992700AF6DFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

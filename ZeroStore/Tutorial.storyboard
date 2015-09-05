@@ -61,7 +61,7 @@
         <!--TutorialVC-->
         <scene sceneID="T49-SL-mpF">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="16" navigationOrientation="horizontal" spineLocation="none" id="GLW-6J-Vlp" customClass="TutorialVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="64" navigationOrientation="horizontal" spineLocation="none" id="GLW-6J-Vlp" customClass="TutorialVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Brq-6n-Evl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1169" y="302"/>
@@ -79,28 +79,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="fAX-Qu-0jw">
-                                <rect key="frame" x="20" y="183" width="560" height="201"/>
+                                <rect key="frame" x="20" y="176.5" width="560" height="201"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="201" id="MfO-KB-2Fx"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifP-gA-7dq">
-                                <rect key="frame" x="180" y="20" width="240" height="155"/>
+                                <rect key="frame" x="180" y="20" width="240" height="148.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="U2p-sn-RGz"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBT-94-fC4">
-                                <rect key="frame" x="180" y="445" width="240" height="155"/>
+                                <rect key="frame" x="180" y="414.5" width="240" height="148.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="rij-MR-tGL"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a tutorial!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CD-zF-xaq">
-                                <rect key="frame" x="20" y="416" width="560" height="20.5"/>
+                                <rect key="frame" x="20" y="385.5" width="560" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -112,7 +112,7 @@
                         <constraints>
                             <constraint firstItem="ifP-gA-7dq" firstAttribute="top" secondItem="Dfx-V5-xjK" secondAttribute="bottom" id="2EC-ft-qt8"/>
                             <constraint firstItem="4CD-zF-xaq" firstAttribute="leading" secondItem="5er-tD-NWj" secondAttribute="leadingMargin" id="DY7-TI-KKI"/>
-                            <constraint firstItem="1XX-By-d49" firstAttribute="top" secondItem="TBT-94-fC4" secondAttribute="bottom" id="DuV-6h-R5r"/>
+                            <constraint firstItem="1XX-By-d49" firstAttribute="top" secondItem="TBT-94-fC4" secondAttribute="bottom" constant="37" id="DuV-6h-R5r"/>
                             <constraint firstItem="fAX-Qu-0jw" firstAttribute="top" secondItem="ifP-gA-7dq" secondAttribute="bottom" constant="8" id="ExV-5G-4F7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4CD-zF-xaq" secondAttribute="trailing" constant="-1.5" id="Fa7-Ir-dVA"/>
                             <constraint firstItem="ifP-gA-7dq" firstAttribute="centerX" secondItem="5er-tD-NWj" secondAttribute="centerX" id="Jyc-4V-0Nx"/>
@@ -120,7 +120,7 @@
                             <constraint firstAttribute="trailing" secondItem="fAX-Qu-0jw" secondAttribute="trailing" constant="20" id="Luh-p5-Dmm"/>
                             <constraint firstAttribute="trailing" secondItem="4CD-zF-xaq" secondAttribute="trailing" constant="20" id="aqS-VR-KIi"/>
                             <constraint firstItem="TBT-94-fC4" firstAttribute="centerX" secondItem="5er-tD-NWj" secondAttribute="centerX" id="bpn-tw-NIE"/>
-                            <constraint firstItem="4CD-zF-xaq" firstAttribute="top" secondItem="fAX-Qu-0jw" secondAttribute="bottom" constant="32" id="dtj-xO-jfM"/>
+                            <constraint firstItem="4CD-zF-xaq" firstAttribute="top" secondItem="fAX-Qu-0jw" secondAttribute="bottom" constant="8" id="dtj-xO-jfM"/>
                             <constraint firstItem="4CD-zF-xaq" firstAttribute="leading" secondItem="5er-tD-NWj" secondAttribute="leading" constant="20" id="is7-oV-TRz"/>
                             <constraint firstItem="fAX-Qu-0jw" firstAttribute="leading" secondItem="5er-tD-NWj" secondAttribute="leading" constant="20" id="jqy-uN-feJ"/>
                             <constraint firstItem="ifP-gA-7dq" firstAttribute="height" secondItem="TBT-94-fC4" secondAttribute="height" id="oup-a4-Rd8"/>

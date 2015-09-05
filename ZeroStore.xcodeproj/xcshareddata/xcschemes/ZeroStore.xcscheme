@@ -38,6 +38,16 @@
                ReferencedContainer = "container:ZeroStore.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "274AF6CC1B9B992700AF6DFB"
+               BuildableName = "ZeroStoreUITests.xctest"
+               BlueprintName = "ZeroStoreUITests"
+               ReferencedContainer = "container:ZeroStore.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
