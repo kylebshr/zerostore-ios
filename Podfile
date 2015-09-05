@@ -3,7 +3,7 @@ platform :ios, '8.0'
 use_frameworks!
 inhibit_all_warnings!
 
-link_with 'yourApp', 'EnterPassword'
+link_with 'EnterPassword'
 
 pod 'NAChloride'
 pod 'SSKeychain'

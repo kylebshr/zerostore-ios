@@ -23,13 +23,13 @@
 		27414B2C1B9A88BF00B490C5 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27414B2B1B9A88BF00B490C5 /* Tutorial.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27414B2E1B9A8B2400B490C5 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */; settings = {ASSET_TAGS = (); }; };
 		27414B301B9A905500B490C5 /* TutorialContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */; settings = {ASSET_TAGS = (); }; };
+		274AF6C51B9B757F00AF6DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordVC.swift */; };
 		27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */; };
 		27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* SettingsVC.swift */; };
-		27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
 		27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
 		27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */; };
 		27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; };
@@ -391,8 +391,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274AF6C51B9B757F00AF6DFB /* Main.storyboard in Resources */,
 				2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */,
-				27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */,
 				27414B2C1B9A88BF00B490C5 /* Tutorial.storyboard in Resources */,
 				27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */,
 			);
