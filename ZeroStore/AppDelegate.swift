@@ -13,16 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)!
-
-        if !defaults.boolForKey(Constants.Defaults.opened) {
-            defaults.setBool(true, forKey: Constants.Defaults.opened)
-            defaults.setInteger(24, forKey: Constants.Defaults.length)
-            defaults.synchronize()
-        }
+        PasswordManager.setInitialDefaultLength()
 
         return true
     }

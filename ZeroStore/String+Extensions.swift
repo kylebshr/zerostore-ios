@@ -50,22 +50,9 @@ extension String {
         let keyLen = key.length
 
         CCHmac(algorithm.HMACAlgorithm, keyStr, keyLen, str!, strLen, result)
-
-//        let digest = stringFromResult(result, length: digestLen)
-
         let base64 = NSData(bytes: result, length: digestLen).base64EncodedStringWithOptions([])
-
         result.dealloc(digestLen)
 
         return base64
     }
-
-//    private func stringFromResult(result: UnsafeMutablePointer<CUnsignedChar>, length: Int) -> String {
-//        var hash = NSMutableString()
-//        for i in 0..<length {
-//            hash.appendFormat("%02x", result[i])
-//        }
-//        return String(hash)
-//    }
-
 }

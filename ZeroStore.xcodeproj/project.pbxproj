@@ -200,7 +200,6 @@
 				27F53D541B99000500550CBE /* Classes and Extensions */,
 				27FAF8F61B98926C00619BD3 /* Images.xcassets */,
 				27FAF8ED1B98926C00619BD3 /* Supporting Files */,
-				27FAF9111B989DD300619BD3 /* ZeroStore-Bridging-Header.h */,
 			);
 			path = ZeroStore;
 			sourceTree = "<group>";
@@ -210,6 +209,7 @@
 			children = (
 				27365DA71B991A4B0036A180 /* ZeroStore.entitlements */,
 				27FAF8EE1B98926C00619BD3 /* Info.plist */,
+				27FAF9111B989DD300619BD3 /* ZeroStore-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
