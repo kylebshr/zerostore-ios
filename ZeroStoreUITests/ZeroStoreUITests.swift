@@ -21,6 +21,7 @@ class ZeroStoreUITests: XCTestCase {
 
         XCUIApplication().launch()
 
+        defaults.removePersistentDomainForName(Constants.Defaults.suiteName)
         SSKeychain.deletePasswordForService(Constants.Keychain.service, account: Constants.Keychain.account)
     }
     
@@ -43,18 +44,15 @@ class ZeroStoreUITests: XCTestCase {
     }
 
     func testPasswordLength() {
-
+        
         let app = XCUIApplication()
 
-        let passwordLengthStaticText = app.tables.staticTexts["Password Length"]
-        passwordLengthStaticText.tap()
-        app.pickerWheels["24"].swipeDown()
-
-        let doneButton = app.toolbars.buttons["Done"]
-        doneButton.tap()
+        app.tables.staticTexts["Password Length"].tap()
+        app.toolbars.buttons["Done"].tap()
     }
 
     func testSettingMasterPassword() {
+
         
     }
 }
