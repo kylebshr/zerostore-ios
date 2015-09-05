@@ -35,6 +35,16 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
         defaultLengthTextField.inputView = lengthPicker
         defaultLengthTextField.inputAccessoryView = doneBar
         defaultLengthTextField.text = "\(defaultLength)"
+
+        clearsSelectionOnViewWillAppear = false
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if let selectedIndex = tableView.indexPathForSelectedRow {
+            tableView.deselectRowAtIndexPath(selectedIndex, animated: animated)
+        }
     }
 
     func dismissPicker() {
@@ -56,10 +66,10 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         if indexPath.section == 2 && indexPath.row == 0 {
-            removeSavedPassword()
-        }
-        if indexPath.section == 1 && indexPath.row == 0 {
             defaultLengthTextField.becomeFirstResponder()
+        }
+        if indexPath.section == 3 && indexPath.row == 0 {
+            removeSavedPassword()
         }
     }
 

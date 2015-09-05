@@ -20,4 +20,12 @@ struct Constants {
         static let opened = "Opened"
         static let suiteName = "group.com.kylebashour.ZeroStore"
     }
+
+    struct Segues {
+        static let showTutorial = "ShowTutorial"
+    }
+
+    struct Storyboard {
+        static let tutorialPageID = "TutorialPage"
+    }
 }

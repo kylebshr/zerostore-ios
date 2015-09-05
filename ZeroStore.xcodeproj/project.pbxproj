@@ -16,6 +16,9 @@
 		272B7ADC1B98F041005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
 		272B7ADD1B98F079005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
 		27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27365DA51B9916C20036A180 /* NoCursorTextField.swift */; };
+		27414B2C1B9A88BF00B490C5 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27414B2B1B9A88BF00B490C5 /* Tutorial.storyboard */; settings = {ASSET_TAGS = (); }; };
+		27414B2E1B9A8B2400B490C5 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */; settings = {ASSET_TAGS = (); }; };
+		27414B301B9A905500B490C5 /* TutorialContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */; settings = {ASSET_TAGS = (); }; };
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
@@ -71,6 +74,9 @@
 		27365DA51B9916C20036A180 /* NoCursorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCursorTextField.swift; sourceTree = "<group>"; };
 		27365DA71B991A4B0036A180 /* ZeroStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZeroStore.entitlements; sourceTree = "<group>"; };
 		27365DA81B991A740036A180 /* EnterPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EnterPassword.entitlements; sourceTree = "<group>"; };
+		27414B2B1B9A88BF00B490C5 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialContainerVC.swift; sourceTree = "<group>"; };
 		2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27F53D571B99004400550CBE /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
@@ -155,6 +161,8 @@
 			children = (
 				27FAF8F11B98926C00619BD3 /* SettingsVC.swift */,
 				27F53D571B99004400550CBE /* ChangePasswordVC.swift */,
+				27414B2F1B9A905500B490C5 /* TutorialContainerVC.swift */,
+				27414B2D1B9A8B2400B490C5 /* TutorialVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAF8F31B98926C00619BD3 /* Main.storyboard */,
+				27414B2B1B9A88BF00B490C5 /* Tutorial.storyboard */,
 				2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
@@ -378,6 +387,7 @@
 			files = (
 				2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */,
 				27FAF8F51B98926C00619BD3 /* Main.storyboard in Resources */,
+				27414B2C1B9A88BF00B490C5 /* Tutorial.storyboard in Resources */,
 				27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,8 +480,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27414B2E1B9A8B2400B490C5 /* TutorialVC.swift in Sources */,
 				27F53D521B98F98A00550CBE /* Constants.swift in Sources */,
 				27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */,
+				27414B301B9A905500B490C5 /* TutorialContainerVC.swift in Sources */,
 				27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */,
 				27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */,
 				27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */,

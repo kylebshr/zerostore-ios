@@ -71,6 +71,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="T1e-BR-CeW" kind="presentation" id="EXq-hl-clR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -189,6 +192,14 @@ If you don't set your password here, we never save it anywhere.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sv9-Nt-DfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1113" y="116"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="bAf-gr-5xc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tutorial" id="T1e-BR-CeW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4l-wI-93o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625.5" y="116"/>
         </scene>
         <!--Set Master Password-->
         <scene sceneID="zEI-kd-HcR">
