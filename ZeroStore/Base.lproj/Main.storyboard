@@ -72,7 +72,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="T1e-BR-CeW" kind="presentation" id="EXq-hl-clR"/>
+                                            <segue destination="T1e-BR-CeW" kind="presentation" modalPresentationStyle="formSheet" id="EXq-hl-clR"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -171,7 +171,7 @@ If you don't set your password here, we never save it anywhere.</string>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="is4-k7-QKS" kind="presentation" id="syC-Dw-yHJ"/>
+                                            <segue destination="is4-k7-QKS" kind="presentation" modalPresentationStyle="formSheet" id="syC-Dw-yHJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -215,7 +215,7 @@ If you don't set your password here, we never save it anywhere.</string>
                             <tableViewSection id="3Mn-5d-Vx2">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Uj7-Fh-oY5">
-                                        <rect key="frame" x="0.0" y="99" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="79" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uj7-Fh-oY5" id="7Pl-HR-k29">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -242,7 +242,7 @@ If you don't set your password here, we never save it anywhere.</string>
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="2zN-7K-zCr">
-                                        <rect key="frame" x="0.0" y="143" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="123" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2zN-7K-zCr" id="V0q-1V-0at">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -273,7 +273,7 @@ If you don't set your password here, we never save it anywhere.</string>
                             <tableViewSection id="mpE-1j-Hzf">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Je7-Re-Yx0">
-                                        <rect key="frame" x="0.0" y="223" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="203" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Je7-Re-Yx0" id="YmK-Ad-Ji0">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>

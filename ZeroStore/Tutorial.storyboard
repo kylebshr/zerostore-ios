@@ -44,7 +44,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tutorial" id="Koh-tf-PX1">
-                        <barButtonItem key="rightBarButtonItem" title="Close" id="ZxO-t6-DJA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="ZxO-t6-DJA">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="y7g-OP-DQh" id="NUw-xs-HNO"/>
                             </connections>
