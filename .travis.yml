@@ -1,0 +1,4 @@
+language: objective-c
+xcode_workspace: ZeroStore.xcworkspace
+xcode_scheme: ZeroStore
+xcode_sdk: iphonesimulator9.0
