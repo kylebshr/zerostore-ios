@@ -9,30 +9,23 @@
 import UIKit
 import SSKeychain
 
-class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingsVC: UITableViewController {
 
     @IBOutlet weak var defaultLengthTextField: UITextField!
 
     let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)!
-    let lengthPicker = UIPickerView()
-    var doneBar: UIToolbar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let defaultLength = defaults.integerForKey(Constants.Defaults.length)
-        let doneBarButton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "dismissPicker")
+        let doneBarButton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "dismissKeyboard")
         let spacing = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
+        let doneBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 44))
 
-        lengthPicker.delegate = self
-        lengthPicker.dataSource = self
-        lengthPicker.selectRow(defaultLength - 8, inComponent: 0, animated: false)
-
-        doneBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 44))
         doneBar.backgroundColor = UIColor.whiteColor()
         doneBar.items = [spacing, doneBarButton]
 
-        defaultLengthTextField.inputView = lengthPicker
         defaultLengthTextField.inputAccessoryView = doneBar
         defaultLengthTextField.text = "\(defaultLength)"
 
@@ -47,7 +40,7 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
         }
     }
 
-    func dismissPicker() {
+    func dismissKeyboard() {
         saveCurrentLength()
         defaultLengthTextField.resignFirstResponder()
     }
@@ -98,30 +91,14 @@ class SettingsVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataS
     }
 
     func saveCurrentLength() {
-        let selectedLength = lengthPicker.selectedRowInComponent(0) + 8
+
+        guard let selectedLength = Int(defaultLengthTextField.text ?? "") where selectedLength <= 44 && selectedLength >= 4 else {
+            showAlert("Invalid Length", message: "Please make sure the length is a number between 4 and 44")
+            return
+        }
+
         defaults.setInteger(selectedLength, forKey: Constants.Defaults.length)
         defaults.synchronize()
         defaultLengthTextField.text = "\(selectedLength)"
-        view.layoutIfNeeded()
-    }
-
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
-    }
-
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 64 - 7
-    }
-
-    func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-        return pickerView.frame.width
-    }
-
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(row + 8)"
-    }
-
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        saveCurrentLength()
     }
 }

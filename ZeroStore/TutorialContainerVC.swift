@@ -11,13 +11,6 @@ import UIKit
 class TutorialContainerVC: UIViewController {
 
     @IBOutlet weak var pageControl: UIPageControl!
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-
-       // navigationController?.navigationBar.shadowImage = UIImage()
-       // navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-    }
 
     @IBAction func doneButtonPressed(sender: UIBarButtonItem) {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)

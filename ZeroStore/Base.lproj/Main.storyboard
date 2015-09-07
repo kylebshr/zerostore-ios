@@ -79,7 +79,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Settings" id="2tM-Cw-Baf">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="ktc-dq-IVt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="ktc-dq-IVt">
                                         <rect key="frame" x="0.0" y="349" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ktc-dq-IVt" id="qcS-aa-h6y">
@@ -93,20 +93,18 @@
                                                     <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="24" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hcx-4o-Iba" customClass="NoCursorTextField" customModule="ZeroStore" customModuleProvider="target">
-                                                    <rect key="frame" x="515" y="11" width="70" height="21"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="24" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hcx-4o-Iba" customClass="NoPasteTextField" customModule="ZeroStore" customModuleProvider="target">
+                                                    <rect key="frame" x="155" y="11" width="430" height="21"/>
                                                     <animations/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="70" id="L22-KF-3xq"/>
-                                                    </constraints>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                 </textField>
                                             </subviews>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Hcx-4o-Iba" secondAttribute="trailing" constant="15" id="3X6-lZ-Lpg"/>
+                                                <constraint firstItem="Hcx-4o-Iba" firstAttribute="leading" secondItem="i8W-aH-yLU" secondAttribute="trailing" constant="8" id="8dD-oL-0Wg"/>
                                                 <constraint firstItem="i8W-aH-yLU" firstAttribute="top" secondItem="qcS-aa-h6y" secondAttribute="topMargin" constant="3" id="R6b-ny-nGP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="i8W-aH-yLU" secondAttribute="bottom" constant="3.5" id="Zqa-4W-DqI"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Hcx-4o-Iba" secondAttribute="bottom" constant="3.5" id="iGA-3K-ueS"/>
@@ -252,7 +250,7 @@ If you don't set your password here, we never save it anywhere.</string>
                                                     <rect key="frame" x="15" y="0.0" width="577" height="43"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="h1r-Tg-0hv" id="O0e-rw-ad2"/>
                                                     </connections>

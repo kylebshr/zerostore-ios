@@ -15,7 +15,7 @@
 		272B7ADA1B98D618005785AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
 		272B7ADC1B98F041005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
 		272B7ADD1B98F079005785AA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272B7ADB1B98F041005785AA /* LocalAuthentication.framework */; };
-		27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27365DA51B9916C20036A180 /* NoCursorTextField.swift */; };
+		27365DA61B9916C20036A180 /* NoPasteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27365DA51B9916C20036A180 /* NoPasteTextField.swift */; };
 		273EA6071B9B5675005589C6 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273EA6061B9B5675005589C6 /* TestConstants.swift */; settings = {ASSET_TAGS = (); }; };
 		273EA6081B9B575E005589C6 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; settings = {ASSET_TAGS = (); }; };
 		273EA6091B9B5941005589C6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9151B98A03900619BD3 /* String+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
@@ -85,7 +85,7 @@
 		272B7ACE1B98C524005785AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		272B7AD01B98C524005785AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272B7ADB1B98F041005785AA /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
-		27365DA51B9916C20036A180 /* NoCursorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCursorTextField.swift; sourceTree = "<group>"; };
+		27365DA51B9916C20036A180 /* NoPasteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoPasteTextField.swift; sourceTree = "<group>"; };
 		27365DA71B991A4B0036A180 /* ZeroStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZeroStore.entitlements; sourceTree = "<group>"; };
 		27365DA81B991A740036A180 /* EnterPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EnterPassword.entitlements; sourceTree = "<group>"; };
 		273EA6061B9B5675005589C6 /* TestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAF90F1B98928200619BD3 /* PasswordManager.swift */,
-				27365DA51B9916C20036A180 /* NoCursorTextField.swift */,
+				27365DA51B9916C20036A180 /* NoPasteTextField.swift */,
 				27FAF9151B98A03900619BD3 /* String+Extensions.swift */,
 			);
 			name = "Classes and Extensions";
@@ -574,7 +574,7 @@
 				27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */,
 				27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */,
 				27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */,
-				27365DA61B9916C20036A180 /* NoCursorTextField.swift in Sources */,
+				27365DA61B9916C20036A180 /* NoPasteTextField.swift in Sources */,
 				274AF6C71B9B8C0900AF6DFB /* TutorialPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
