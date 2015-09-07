@@ -14,8 +14,6 @@ class SettingsVC: UITableViewController {
     @IBOutlet weak var defaultLengthTextField: UITextField!
 
     let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)!
-    let lengthPicker = UIPickerView()
-    var doneBar: UIToolbar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +21,8 @@ class SettingsVC: UITableViewController {
         let defaultLength = defaults.integerForKey(Constants.Defaults.length)
         let doneBarButton = UIBarButtonItem(title: "Done", style: .Done, target: self, action: "dismissKeyboard")
         let spacing = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
+        let doneBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 44))
 
-        doneBar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 44))
         doneBar.backgroundColor = UIColor.whiteColor()
         doneBar.items = [spacing, doneBarButton]
 
@@ -93,10 +91,14 @@ class SettingsVC: UITableViewController {
     }
 
     func saveCurrentLength() {
-        let selectedLength = Int(defaultLengthTextField.text ?? "") ?? 24
+
+        guard let selectedLength = Int(defaultLengthTextField.text ?? "") where selectedLength <= 44 && selectedLength >= 4 else {
+            showAlert("Invalid Length", message: "Please make sure the length is a number between 4 and 44")
+            return
+        }
+
         defaults.setInteger(selectedLength, forKey: Constants.Defaults.length)
         defaults.synchronize()
         defaultLengthTextField.text = "\(selectedLength)"
-        view.layoutIfNeeded()
     }
 }
