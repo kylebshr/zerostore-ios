@@ -34,7 +34,7 @@
 		27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8EF1B98926C00619BD3 /* AppDelegate.swift */; };
 		27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF8F11B98926C00619BD3 /* SettingsVC.swift */; };
 		27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F61B98926C00619BD3 /* Images.xcassets */; };
-		27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */; };
+		27FAF9061B98926C00619BD3 /* TestPasswordGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9051B98926C00619BD3 /* TestPasswordGeneration.swift */; };
 		27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF90F1B98928200619BD3 /* PasswordManager.swift */; };
 		27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAF9151B98A03900619BD3 /* String+Extensions.swift */; };
 		31B0E84BC8D758EE2921049F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D0B543176B7E6E804CF8AC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -107,7 +107,7 @@
 		27FAF8F61B98926C00619BD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27FAF8FF1B98926C00619BD3 /* ZeroStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FAF9041B98926C00619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroStoreTests.swift; sourceTree = "<group>"; };
+		27FAF9051B98926C00619BD3 /* TestPasswordGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPasswordGeneration.swift; sourceTree = "<group>"; };
 		27FAF90F1B98928200619BD3 /* PasswordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
 		27FAF9111B989DD300619BD3 /* ZeroStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZeroStore-Bridging-Header.h"; sourceTree = "<group>"; };
 		27FAF9151B98A03900619BD3 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 		27FAF9021B98926C00619BD3 /* ZeroStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				27FAF9051B98926C00619BD3 /* ZeroStoreTests.swift */,
+				27FAF9051B98926C00619BD3 /* TestPasswordGeneration.swift */,
 				273EA6061B9B5675005589C6 /* TestConstants.swift */,
 				27FAF9031B98926C00619BD3 /* Supporting Files */,
 			);
@@ -586,7 +586,7 @@
 				273EA60A1B9B59A4005589C6 /* Constants.swift in Sources */,
 				273EA6091B9B5941005589C6 /* String+Extensions.swift in Sources */,
 				273EA6081B9B575E005589C6 /* PasswordManager.swift in Sources */,
-				27FAF9061B98926C00619BD3 /* ZeroStoreTests.swift in Sources */,
+				27FAF9061B98926C00619BD3 /* TestPasswordGeneration.swift in Sources */,
 				273EA6071B9B5675005589C6 /* TestConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
