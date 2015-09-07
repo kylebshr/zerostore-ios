@@ -26,7 +26,7 @@ class TestPasswordGeneration: XCTestCase {
         let expectation = expectationWithDescription("Short Password")
 
         PasswordManager.sharedInstance.generatePassword(TestConstants.shortMasterPassword, userID: TestConstants.shortGoogleURL, length: 24) { password in
-            XCTAssert(password == TestConstants.longMasterPassword)
+            XCTAssert(password == TestConstants.shortMasterSolution)
             expectation.fulfill()
         }
 
