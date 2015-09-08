@@ -34,6 +34,7 @@
 		279414B41B9F53A300128805 /* CryptoAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279414B21B9F537F00128805 /* CryptoAlgorithm.swift */; settings = {ASSET_TAGS = (); }; };
 		279414B51B9F53A600128805 /* CryptoAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279414B21B9F537F00128805 /* CryptoAlgorithm.swift */; settings = {ASSET_TAGS = (); }; };
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		27C81B9F1B9F6A930025651D /* ZeroStore.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27FAF8EA1B98926C00619BD3 /* ZeroStore.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D571B99004400550CBE /* ChangePasswordVC.swift */; };
@@ -81,6 +82,16 @@
 				272B7AD31B98C524005785AA /* EnterPassword.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C81B9E1B9F6A850025651D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				27C81B9F1B9F6A930025651D /* ZeroStore.app in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -394,7 +405,7 @@
 			buildPhases = (
 				274AF6C91B9B992700AF6DFB /* Sources */,
 				274AF6CA1B9B992700AF6DFB /* Frameworks */,
-				274AF6CB1B9B992700AF6DFB /* Resources */,
+				27C81B9E1B9F6A850025651D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -519,13 +530,6 @@
 			files = (
 				272B7ADA1B98D618005785AA /* Images.xcassets in Resources */,
 				272B7ACF1B98C524005785AA /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		274AF6CB1B9B992700AF6DFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
