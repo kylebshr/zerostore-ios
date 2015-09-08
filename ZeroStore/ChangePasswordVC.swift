@@ -29,26 +29,17 @@ class ChangePasswordVC: UITableViewController, UITextFieldDelegate {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 
-    func showAlert(title: String?, message: String?) {
-
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        let tryAgainButton = UIAlertAction(title: "Try Again", style: .Default, handler: nil)
-
-        alert.addAction(tryAgainButton)
-        presentViewController(alert, animated: true, completion: nil)
-    }
-
     func attemptToSaveNewPassword() {
 
         if passwordTextField.text != confirmPasswordTextField.text {
-            showAlert("Your Passwords Don't Match!", message: nil)
+            showGenericAlert("Your Passwords Don't Match!", message: nil)
         }
         else if let newPassword = passwordTextField.text where newPassword != "" {
             SSKeychain.setPassword(newPassword, forService: Constants.Keychain.service, account: Constants.Keychain.account)
             dismissSelf()
         }
         else {
-            showAlert("You Didn't Enter a Password!", message: nil)
+            showGenericAlert("You Didn't Enter a Password!", message: nil)
         }
     }
 

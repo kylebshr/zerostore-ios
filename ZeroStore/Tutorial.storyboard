@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y7g-OP-DQh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fJ4-5q-8qX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -43,13 +43,20 @@
                             <constraint firstAttribute="trailing" secondItem="aIC-Bh-cQe" secondAttribute="trailing" id="ohX-Ut-iSc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Tutorial" id="GJ4-4J-OTk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="Q2O-Us-20r">
+                            <connections>
+                                <action selector="dismissButtonPressed:" destination="y7g-OP-DQh" id="7gv-jR-xxn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pageControl" destination="MLb-bc-tP4" id="vPi-dW-jVQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rD3-SU-Eef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="302"/>
+            <point key="canvasLocation" x="1212" y="302"/>
         </scene>
         <!--TutorialVC-->
         <scene sceneID="T49-SL-mpF">
@@ -57,7 +64,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="64" navigationOrientation="horizontal" spineLocation="none" id="GLW-6J-Vlp" customClass="TutorialVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Brq-6n-Evl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169" y="302"/>
+            <point key="canvasLocation" x="1981" y="302"/>
         </scene>
         <!--Tutorial PageVC-->
         <scene sceneID="cM1-M4-XdN">
@@ -145,7 +152,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVW-2D-2Kn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947" y="302"/>
+            <point key="canvasLocation" x="2759" y="302"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R5E-iR-Wfx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fJ4-5q-8qX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pcg-Pg-soV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y7g-OP-DQh" kind="relationship" relationship="rootViewController" id="t2L-zX-LrL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ya-Ga-klz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="302"/>
         </scene>
     </scenes>
     <resources>

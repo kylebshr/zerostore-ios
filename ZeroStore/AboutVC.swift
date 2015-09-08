@@ -22,6 +22,10 @@ class AboutVC: UITableViewController {
 
         setVersionNumber()
     }
+
+    @IBAction func dismissButtonPressed(sender: UIBarButtonItem) {
+        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     func setVersionNumber() {
 

@@ -136,7 +136,7 @@ If you don't set your password here, we never save it anywhere.</string>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="T1e-BR-CeW" kind="show" id="9S9-V6-Uhh"/>
+                                            <segue destination="T1e-BR-CeW" kind="presentation" modalPresentationStyle="formSheet" id="9S9-V6-Uhh"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="FNF-sy-pf3">
@@ -163,7 +163,7 @@ If you don't set your password here, we never save it anywhere.</string>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="tZb-ca-0n9" kind="show" id="lrK-Fo-jlU"/>
+                                            <segue destination="tZb-ca-0n9" kind="presentation" modalPresentationStyle="formSheet" id="lrK-Fo-jlU"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -193,7 +193,7 @@ If you don't set your password here, we never save it anywhere.</string>
                 <viewControllerPlaceholder storyboardName="Tutorial" id="T1e-BR-CeW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4l-wI-93o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1578.5" y="40"/>
+            <point key="canvasLocation" x="1600.5" y="40"/>
         </scene>
         <!--About-->
         <scene sceneID="y8h-O5-mVO">
@@ -201,7 +201,7 @@ If you don't set your password here, we never save it anywhere.</string>
                 <viewControllerPlaceholder storyboardName="About" id="tZb-ca-0n9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sso-vF-tZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1573.5" y="192"/>
+            <point key="canvasLocation" x="1595.5" y="192"/>
         </scene>
         <!--Set Master Password-->
         <scene sceneID="zEI-kd-HcR">

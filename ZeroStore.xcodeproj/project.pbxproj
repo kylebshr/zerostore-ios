@@ -29,6 +29,7 @@
 		274AF6C51B9B757F00AF6DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAF8F31B98926C00619BD3 /* Main.storyboard */; };
 		274AF6C71B9B8C0900AF6DFB /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AF6C61B9B8C0900AF6DFB /* TutorialPageVC.swift */; settings = {ASSET_TAGS = (); }; };
 		274AF6D01B9B992700AF6DFB /* ZeroStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */; };
+		279414B11B9F4CB300128805 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279414B01B9F4CB300128805 /* UIViewController+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
@@ -100,6 +101,7 @@
 		274AF6CD1B9B992700AF6DFB /* ZeroStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroStoreUITests.swift; sourceTree = "<group>"; };
 		274AF6D11B9B992700AF6DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279414B01B9F4CB300128805 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27F53D571B99004400550CBE /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAF90F1B98928200619BD3 /* PasswordManager.swift */,
+				279414B01B9F4CB300128805 /* UIViewController+Extensions.swift */,
 				27365DA51B9916C20036A180 /* NoPasteTextField.swift */,
 				27FAF9151B98A03900619BD3 /* String+Extensions.swift */,
 			);
@@ -593,6 +596,7 @@
 				27F53D521B98F98A00550CBE /* Constants.swift in Sources */,
 				27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */,
 				27414B301B9A905500B490C5 /* TutorialContainerVC.swift in Sources */,
+				279414B11B9F4CB300128805 /* UIViewController+Extensions.swift in Sources */,
 				27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */,
 				27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */,
 				27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */,
