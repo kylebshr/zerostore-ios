@@ -188,14 +188,14 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		272B7ACA1B98C524005785AA /* EnterPassword */ = {
+		272B7ACA1B98C524005785AA /* EnterPassword Action */ = {
 			isa = PBXGroup;
 			children = (
-				27365DA81B991A740036A180 /* EnterPassword.entitlements */,
-				272B7ACB1B98C524005785AA /* ActionVC.swift */,
-				272B7ACD1B98C524005785AA /* MainInterface.storyboard */,
-				272B7AD01B98C524005785AA /* Info.plist */,
+				279414B81B9F574F00128805 /* Storyboards */,
+				279414B71B9F574600128805 /* View Controllers */,
+				279414B91B9F576200128805 /* Supporting Files */,
 			);
+			name = "EnterPassword Action";
 			path = EnterPassword;
 			sourceTree = "<group>";
 		};
@@ -213,9 +213,50 @@
 			isa = PBXGroup;
 			children = (
 				274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */,
-				274AF6D11B9B992700AF6DFB /* Info.plist */,
+				279414BA1B9F579A00128805 /* Supporting Files */,
 			);
 			path = ZeroStoreUITests;
+			sourceTree = "<group>";
+		};
+		279414B61B9F548100128805 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF8F61B98926C00619BD3 /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		279414B71B9F574600128805 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				272B7ACB1B98C524005785AA /* ActionVC.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		279414B81B9F574F00128805 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				272B7ACD1B98C524005785AA /* MainInterface.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		279414B91B9F576200128805 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27365DA81B991A740036A180 /* EnterPassword.entitlements */,
+				272B7AD01B98C524005785AA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		279414BA1B9F579A00128805 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				274AF6D11B9B992700AF6DFB /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		27F53D541B99000500550CBE /* Classes and Extensions */ = {
@@ -255,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAF8EC1B98926C00619BD3 /* ZeroStore */,
-				272B7ACA1B98C524005785AA /* EnterPassword */,
+				272B7ACA1B98C524005785AA /* EnterPassword Action */,
 				27FAF9021B98926C00619BD3 /* ZeroStoreTests */,
 				274AF6CE1B9B992700AF6DFB /* ZeroStoreUITests */,
 				27FAF8EB1B98926C00619BD3 /* Products */,
@@ -283,7 +324,7 @@
 				27F53D561B99001B00550CBE /* Storyboards */,
 				27F53D551B99001300550CBE /* View Controllers */,
 				27F53D541B99000500550CBE /* Classes and Extensions */,
-				27FAF8F61B98926C00619BD3 /* Images.xcassets */,
+				279414B61B9F548100128805 /* Assets */,
 				27FAF8ED1B98926C00619BD3 /* Supporting Files */,
 			);
 			path = ZeroStore;

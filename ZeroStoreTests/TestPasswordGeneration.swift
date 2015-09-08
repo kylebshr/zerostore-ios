@@ -11,16 +11,8 @@ import XCTest
 
 class TestPasswordGeneration: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
+    // Simple tests to make sure passwords are created correctly 
 
-    }
-    
-    override func tearDown() {
-
-        super.tearDown()
-    }
-    
     func testShortPassword() {
 
         let expectation = expectationWithDescription("Short Password")
@@ -29,7 +21,6 @@ class TestPasswordGeneration: XCTestCase {
             XCTAssert(password == TestConstants.shortMasterSolution)
             expectation.fulfill()
         }
-
 
         waitForExpectationsWithTimeout(2, handler: nil)
     }

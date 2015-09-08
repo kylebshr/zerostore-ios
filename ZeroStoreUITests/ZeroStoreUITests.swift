@@ -9,6 +9,7 @@
 import XCTest
 import SSKeychain
 
+// Some UI tests — still new to these, they can probably be improved a lot
 class ZeroStoreUITests: XCTestCase {
 
     let domainName = NSBundle.mainBundle().bundleIdentifier!
@@ -39,7 +40,8 @@ class ZeroStoreUITests: XCTestCase {
         element.swipeLeft()
         element.swipeLeft()
         element.swipeLeft()
-        app.navigationBars["Tutorial"].buttons[" "].tap()
+
+        app.navigationBars["Tutorial"].buttons["Stop"].tap()
     }
 
     func testPasswordLength() {

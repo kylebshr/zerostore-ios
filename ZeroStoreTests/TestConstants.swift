@@ -8,6 +8,7 @@
 
 import Foundation
 
+// A few constants for testing
 struct TestConstants {
 
     static let fullGoogleURL = "https://www.google.com/this/?isa&url"
