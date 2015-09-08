@@ -18,6 +18,12 @@ class TutorialVC: UIPageViewController {
         "Turn on the ZeroStore action",
         "Tap on the ZeroStore Password icon to use ZeroStore in your browser"
     ]
+    let notes = [
+        "",
+        "",
+        "Note: if you don't see the ZeroStore action in the list, you may be using an incompatible browser.",
+        ""
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +49,7 @@ class TutorialVC: UIPageViewController {
             tutorialPage.previousPage = index - 1
             tutorialPage.imageView.image = image
             tutorialPage.label.text = phrase
+            tutorialPage.noteLabel.text = self.notes[index]
 
             viewControllers[index] = tutorialPage
         }

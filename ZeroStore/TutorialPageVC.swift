@@ -12,6 +12,7 @@ class TutorialPageVC: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var noteLabel: UILabel!
 
     var nextPage = 0
     var previousPage = 0
