@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RdS-Mw-wFo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="399-xg-VQC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -7,27 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="tPR-TK-x1p">
-            <objects>
-                <navigationController id="RdS-Mw-wFo" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bh1-Io-HQT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="399-xg-VQC" kind="relationship" relationship="rootViewController" id="9ZO-rN-pae"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dVP-dv-pud" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="159" y="439"/>
-        </scene>
         <!--About-->
         <scene sceneID="GKD-n1-bu6">
             <objects>
-                <tableViewController id="399-xg-VQC" customClass="AboutVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="About" id="399-xg-VQC" customClass="AboutVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="sYl-ZJ-pWv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +20,7 @@
                             <tableViewSection id="7ye-UF-5TP">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="214" id="KrJ-y3-9fL">
-                                        <rect key="frame" x="0.0" y="99" width="600" height="214"/>
+                                        <rect key="frame" x="0.0" y="35" width="600" height="214"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KrJ-y3-9fL" id="tfn-pG-qls">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="213.5"/>
@@ -57,15 +40,15 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with love by Kyle Bashour" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-6o-IiQ">
-                                                    <rect key="frame" x="192" y="151" width="216.5" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with care by Kyle Bashour" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-6o-IiQ">
+                                                    <rect key="frame" x="191" y="151" width="218.5" height="18"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRg-m1-fMV">
-                                                    <rect key="frame" x="251" y="191.5" width="98.5" height="14.5"/>
+                                                    <rect key="frame" x="251" y="191" width="98.5" height="14.5"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,7 +83,7 @@
                             <tableViewSection headerTitle="" footerTitle="" id="Crw-Gi-Kec">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="5P9-YW-BbG">
-                                        <rect key="frame" x="0.0" y="349" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="285" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5P9-YW-BbG" id="R3O-7R-lGf">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -124,7 +107,7 @@
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="qt2-HO-u5N">
-                                        <rect key="frame" x="0.0" y="393" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="329" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qt2-HO-u5N" id="oas-cW-Jz1">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -155,13 +138,6 @@
                             <outlet property="delegate" destination="399-xg-VQC" id="gn6-jL-WFz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="About" id="H1C-E9-RW3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="FSG-my-6Qe">
-                            <connections>
-                                <action selector="doneButtonPressed:" destination="399-xg-VQC" id="v0E-hi-aLZ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="twitterLinkLabel" destination="v3M-6o-IiQ" id="QRg-Ej-3Vm"/>
                         <outlet property="versionLabel" destination="CRg-m1-fMV" id="2Vr-HF-gvR"/>

@@ -32,23 +32,40 @@ class ZeroStoreUITests: XCTestCase {
     
     func testTutorial() {
 
-//        let app = XCUIApplication()
-//
-//        app.tables.staticTexts["How to Use ZeroStore"].tap()
-//
-//        let element = app.childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element.childrenMatchingType(.Other).element
-//        element.swipeLeft()
-//        element.swipeLeft()
-//        element.swipeLeft()
-//        app.navigationBars["Tutorial"].buttons["Close"].tap()
+        let app = XCUIApplication()
+        app.tables.staticTexts["How to Use ZeroStore"].tap()
+        
+        let element = app.childrenMatchingType(XCUIElementType.Window).elementBoundByIndex(0)
+        element.swipeLeft()
+        element.swipeLeft()
+        element.swipeLeft()
+        app.navigationBars["Tutorial"].buttons[" "].tap()
     }
 
     func testPasswordLength() {
         
-//        let app = XCUIApplication()
-//
-//        app.tables.staticTexts["Password Length"].tap()
-//        app.toolbars.buttons["Done"].tap()
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        tablesQuery.staticTexts["Password Length"].tap()
+        
+        let deleteKey = app.keys["Delete"]
+        deleteKey.doubleTap()
+        
+        let textField = tablesQuery.cells.containingType(.StaticText, identifier:"Password Length").childrenMatchingType(.TextField).element
+        textField.typeText("3")
+
+        let doneButton = app.toolbars.buttons["Done"]
+        doneButton.tap()
+        
+        let okButton = app.alerts["Invalid Length"].collectionViews.buttons["OK"]
+        okButton.tap()
+        deleteKey.doubleTap()
+        textField.typeText("55")
+        doneButton.tap()
+        okButton.tap()
+        deleteKey.doubleTap()
+        textField.typeText("24")
+        doneButton.tap()
     }
 
     func testSettingMasterPassword() {

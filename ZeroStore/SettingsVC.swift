@@ -54,18 +54,6 @@ class SettingsVC: UITableViewController {
         presentViewController(alert, animated: true, completion: nil)
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-
-        if indexPath.section == 2 && indexPath.row == 0 {
-            defaultLengthTextField.becomeFirstResponder()
-        }
-        if indexPath.section == 3 && indexPath.row == 0 {
-            removeSavedPassword()
-        }
-    }
-
     func removeSavedPassword() {
 
         if SSKeychain.passwordForService(Constants.Keychain.service, account: Constants.Keychain.account) == nil {
@@ -101,4 +89,18 @@ class SettingsVC: UITableViewController {
         defaults.synchronize()
         defaultLengthTextField.text = "\(selectedLength)"
     }
+
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+        if indexPath.section == 0 && indexPath.row == 0 {
+            defaultLengthTextField.becomeFirstResponder()
+        }
+        if indexPath.section == 0 && indexPath.row == 2 {
+            removeSavedPassword()
+        }
+    }
+
 }

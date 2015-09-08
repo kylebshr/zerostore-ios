@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7BY-bm-6mw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y7g-OP-DQh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -9,7 +9,7 @@
         <!--Tutorial-->
         <scene sceneID="3tm-qZ-Ws4">
             <objects>
-                <viewController id="y7g-OP-DQh" customClass="TutorialContainerVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tutorial" id="y7g-OP-DQh" customClass="TutorialContainerVC" customModule="ZeroStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6db-b1-Rgo"/>
                         <viewControllerLayoutGuide type="bottom" id="GjT-Uy-xLk"/>
@@ -43,13 +43,6 @@
                             <constraint firstAttribute="trailing" secondItem="aIC-Bh-cQe" secondAttribute="trailing" id="ohX-Ut-iSc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tutorial" id="Koh-tf-PX1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="ZxO-t6-DJA">
-                            <connections>
-                                <action selector="doneButtonPressed:" destination="y7g-OP-DQh" id="NUw-xs-HNO"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="pageControl" destination="MLb-bc-tP4" id="vPi-dW-jVQ"/>
                     </connections>
@@ -142,25 +135,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVW-2D-2Kn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947" y="302"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="U2N-0j-ixW">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7BY-bm-6mw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BE6-5O-Ogv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="y7g-OP-DQh" kind="relationship" relationship="rootViewController" id="EYc-da-JnE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jyG-kD-Iba" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-412" y="302"/>
         </scene>
     </scenes>
     <resources>

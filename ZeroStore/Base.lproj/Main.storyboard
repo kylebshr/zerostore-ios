@@ -17,7 +17,10 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
-                            <tableViewSection headerTitle="Settings" id="2tM-Cw-Baf">
+                            <tableViewSection headerTitle="Settings" id="EhW-YR-pZ7">
+                                <string key="footerTitle">Set your password here if you want to use TouchID to fetch your account passwords. This is kept securely in the iOS keychain, and never sent anywhere else. 
+
+If you don't set your password here, we never save it anywhere.</string>
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="ktc-dq-IVt">
                                         <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
@@ -54,69 +57,8 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="Q6s-rX-2z4">
-                                        <rect key="frame" x="0.0" y="157.5" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q6s-rX-2z4" id="YJq-Ws-b3k">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Use ZeroStore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-P5-Hoa">
-                                                    <rect key="frame" x="15" y="11" width="170" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hfD-P5-Hoa" secondAttribute="bottom" constant="3.5" id="UV3-Hh-f2G"/>
-                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="top" secondItem="YJq-Ws-b3k" secondAttribute="topMargin" constant="3" id="hSx-XK-KAR"/>
-                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="leading" secondItem="YJq-Ws-b3k" secondAttribute="leading" constant="15" id="xdZ-6u-h23"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <segue destination="T1e-BR-CeW" kind="presentation" modalPresentationStyle="formSheet" id="EXq-hl-clR"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="FNF-sy-pf3">
-                                        <rect key="frame" x="0.0" y="201.5" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FNF-sy-pf3" id="Tvz-Fq-PZv">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-tz-t5u">
-                                                    <rect key="frame" x="15" y="11" width="47" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstItem="fuq-tz-t5u" firstAttribute="leading" secondItem="Tvz-Fq-PZv" secondAttribute="leading" constant="15" id="Nzb-aC-FRr"/>
-                                                <constraint firstItem="fuq-tz-t5u" firstAttribute="top" secondItem="Tvz-Fq-PZv" secondAttribute="topMargin" constant="3" id="btK-gn-xRL"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="fuq-tz-t5u" secondAttribute="bottom" constant="3.5" id="zQ0-Z6-eAc"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <segue destination="tZb-ca-0n9" kind="presentation" modalPresentationStyle="formSheet" id="vrV-Qa-lRA"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Password" id="EhW-YR-pZ7">
-                                <string key="footerTitle">Set your password here if you want to use TouchID to fetch your account passwords. This is kept securely in the iOS keychain, and never sent anywhere else. 
-
-If you don't set your password here, we never save it anywhere.</string>
-                                <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="y3X-tq-upf">
-                                        <rect key="frame" x="0.0" y="295.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="157.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y3X-tq-upf" id="bgR-RN-AFF">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -143,7 +85,7 @@ If you don't set your password here, we never save it anywhere.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="hqQ-R2-hmH">
-                                        <rect key="frame" x="0.0" y="339.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="201.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqQ-R2-hmH" id="eE0-bf-NM6">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -168,8 +110,63 @@ If you don't set your password here, we never save it anywhere.</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="" footerTitle="" id="mf9-WO-fnm">
-                                <cells/>
+                            <tableViewSection headerTitle="" id="2tM-Cw-Baf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="Q6s-rX-2z4">
+                                        <rect key="frame" x="0.0" y="338.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q6s-rX-2z4" id="YJq-Ws-b3k">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Use ZeroStore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-P5-Hoa">
+                                                    <rect key="frame" x="15" y="11" width="170" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hfD-P5-Hoa" secondAttribute="bottom" constant="3.5" id="UV3-Hh-f2G"/>
+                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="top" secondItem="YJq-Ws-b3k" secondAttribute="topMargin" constant="3" id="hSx-XK-KAR"/>
+                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="leading" secondItem="YJq-Ws-b3k" secondAttribute="leading" constant="15" id="xdZ-6u-h23"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="T1e-BR-CeW" kind="show" id="9S9-V6-Uhh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="FNF-sy-pf3">
+                                        <rect key="frame" x="0.0" y="382.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FNF-sy-pf3" id="Tvz-Fq-PZv">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-tz-t5u">
+                                                    <rect key="frame" x="15" y="11" width="47" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="fuq-tz-t5u" firstAttribute="leading" secondItem="Tvz-Fq-PZv" secondAttribute="leading" constant="15" id="Nzb-aC-FRr"/>
+                                                <constraint firstItem="fuq-tz-t5u" firstAttribute="top" secondItem="Tvz-Fq-PZv" secondAttribute="topMargin" constant="3" id="btK-gn-xRL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fuq-tz-t5u" secondAttribute="bottom" constant="3.5" id="zQ0-Z6-eAc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="tZb-ca-0n9" kind="show" id="lrK-Fo-jlU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -177,7 +174,9 @@ If you don't set your password here, we never save it anywhere.</string>
                             <outlet property="delegate" destination="vXV-af-lxN" id="Py3-07-A2O"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ZeroStore" id="MMu-P7-k0x"/>
+                    <navigationItem key="navigationItem" title="ZeroStore" id="MMu-P7-k0x">
+                        <barButtonItem key="backBarButtonItem" title=" " id="SAW-Zk-jWL"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
