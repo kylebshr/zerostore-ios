@@ -10,4 +10,5 @@ osx_image: xcode7
 script: xctool -workspace ZeroStore.xcworkspace -scheme ZeroStore clean test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator
 
 before_install:
+  - brew upgrade
   - gem install cocoapods -v '0.38.2'
