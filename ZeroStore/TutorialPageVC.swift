@@ -10,6 +10,9 @@ import UIKit
 
 class TutorialPageVC: UIViewController {
 
+
+    // MARK: Properties
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var noteLabel: UILabel!

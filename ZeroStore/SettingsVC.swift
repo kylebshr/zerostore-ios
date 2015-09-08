@@ -60,6 +60,7 @@ class SettingsVC: UITableViewController {
 
     // Called when done editing the length
     func dismissKeyboard() {
+        
         saveCurrentLength()
         defaultLengthTextField.resignFirstResponder()
     }

@@ -30,6 +30,9 @@
 		274AF6C71B9B8C0900AF6DFB /* TutorialPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AF6C61B9B8C0900AF6DFB /* TutorialPageVC.swift */; settings = {ASSET_TAGS = (); }; };
 		274AF6D01B9B992700AF6DFB /* ZeroStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */; };
 		279414B11B9F4CB300128805 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279414B01B9F4CB300128805 /* UIViewController+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		279414B31B9F537F00128805 /* CryptoAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279414B21B9F537F00128805 /* CryptoAlgorithm.swift */; settings = {ASSET_TAGS = (); }; };
+		279414B41B9F53A300128805 /* CryptoAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279414B21B9F537F00128805 /* CryptoAlgorithm.swift */; settings = {ASSET_TAGS = (); }; };
+		279414B51B9F53A600128805 /* CryptoAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279414B21B9F537F00128805 /* CryptoAlgorithm.swift */; settings = {ASSET_TAGS = (); }; };
 		2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		27F53D521B98F98A00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
 		27F53D531B98F98D00550CBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F53D511B98F98A00550CBE /* Constants.swift */; };
@@ -102,6 +105,7 @@
 		274AF6CF1B9B992700AF6DFB /* ZeroStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroStoreUITests.swift; sourceTree = "<group>"; };
 		274AF6D11B9B992700AF6DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279414B01B9F4CB300128805 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		279414B21B9F537F00128805 /* CryptoAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoAlgorithm.swift; sourceTree = "<group>"; };
 		2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F53D511B98F98A00550CBE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27F53D571B99004400550CBE /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 				279414B01B9F4CB300128805 /* UIViewController+Extensions.swift */,
 				27365DA51B9916C20036A180 /* NoPasteTextField.swift */,
 				27FAF9151B98A03900619BD3 /* String+Extensions.swift */,
+				279414B21B9F537F00128805 /* CryptoAlgorithm.swift */,
 			);
 			name = "Classes and Extensions";
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272B7AD81B98CE7C005785AA /* PasswordManager.swift in Sources */,
+				279414B41B9F53A300128805 /* CryptoAlgorithm.swift in Sources */,
 				272B7AD91B98CF55005785AA /* String+Extensions.swift in Sources */,
 				272B7ACC1B98C524005785AA /* ActionVC.swift in Sources */,
 				27F53D531B98F98D00550CBE /* Constants.swift in Sources */,
@@ -596,6 +602,7 @@
 				27F53D521B98F98A00550CBE /* Constants.swift in Sources */,
 				27FAF9161B98A03900619BD3 /* String+Extensions.swift in Sources */,
 				27414B301B9A905500B490C5 /* TutorialContainerVC.swift in Sources */,
+				279414B31B9F537F00128805 /* CryptoAlgorithm.swift in Sources */,
 				279414B11B9F4CB300128805 /* UIViewController+Extensions.swift in Sources */,
 				27FAF9101B98928200619BD3 /* PasswordManager.swift in Sources */,
 				27F53D581B99004400550CBE /* ChangePasswordVC.swift in Sources */,
@@ -613,6 +620,7 @@
 			files = (
 				273EA60A1B9B59A4005589C6 /* Constants.swift in Sources */,
 				273EA6091B9B5941005589C6 /* String+Extensions.swift in Sources */,
+				279414B51B9F53A600128805 /* CryptoAlgorithm.swift in Sources */,
 				273EA6081B9B575E005589C6 /* PasswordManager.swift in Sources */,
 				27FAF9061B98926C00619BD3 /* TestPasswordGeneration.swift in Sources */,
 				273EA6071B9B5675005589C6 /* TestConstants.swift in Sources */,
@@ -663,7 +671,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6D873D2935D79FF5A63A787 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = ActionTemplate;
+				ASSETCATALOG_COMPILER_APPICON_NAME = ActionIcon;
 				CODE_SIGN_ENTITLEMENTS = EnterPassword/EnterPassword.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -684,7 +692,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACF77F493C2EB06CA67BFCF5 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = ActionTemplate;
+				ASSETCATALOG_COMPILER_APPICON_NAME = ActionIcon;
 				CODE_SIGN_ENTITLEMENTS = EnterPassword/EnterPassword.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

@@ -11,8 +11,14 @@ import SSKeychain
 
 class ChangePasswordVC: UITableViewController, UITextFieldDelegate {
 
+
+    // MARK: Properties
+
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+
+
+    // MARK: Lifecycle
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -20,28 +26,43 @@ class ChangePasswordVC: UITableViewController, UITextFieldDelegate {
         passwordTextField.becomeFirstResponder()
     }
 
+
+    // MARK: Actions
+
     @IBAction func cancelButtonPressed(sender: UIBarButtonItem) {
+        
         dismissSelf()
     }
 
+
+    // MARK: Helper functions
+
     func dismissSelf() {
+
         view.endEditing(true)
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    // Checks that the password is valid and saves it if so
     func attemptToSaveNewPassword() {
 
         if passwordTextField.text != confirmPasswordTextField.text {
             showGenericAlert("Your Passwords Don't Match!", message: nil)
         }
-        else if let newPassword = passwordTextField.text where newPassword != "" {
+        else if passwordTextField.text == "" {
+            showGenericAlert("You Need To Enter a Password!", message: nil)
+        }
+        else if let newPassword = passwordTextField.text {
             SSKeychain.setPassword(newPassword, forService: Constants.Keychain.service, account: Constants.Keychain.account)
             dismissSelf()
         }
         else {
-            showGenericAlert("You Didn't Enter a Password!", message: nil)
+            showGenericAlert("Unknown Error", message: "Please get in touch through the About page if this continues to happen")
         }
     }
+
+
+    // MARK: Delegate functions
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
@@ -53,6 +74,7 @@ class ChangePasswordVC: UITableViewController, UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
+
         if textField === passwordTextField {
             confirmPasswordTextField.becomeFirstResponder()
         }

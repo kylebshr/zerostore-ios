@@ -8,7 +8,10 @@
 
 import UIKit
 
-class TutorialVC: UIPageViewController {
+class TutorialVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+
+
+    // MARK: Properties
 
     weak var pageControl: UIPageControl?
 
@@ -25,15 +28,23 @@ class TutorialVC: UIPageViewController {
         ""
     ]
 
+
+    // MARK: Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         dataSource = self
         delegate = self
 
+        // Sets the initial page for the tutorial
         setViewControllers([tutorialViewControllers[0]!], direction: .Forward, animated: false, completion: nil)
     }
 
+
+    // MARK: Computed/Lazy properties
+
+    // Create and save all the view controllers in memory for less glitchy paging
     lazy var tutorialViewControllers: [Int: TutorialPageVC] = {
 
         var viewControllers = [Int: TutorialPageVC]()
@@ -56,9 +67,16 @@ class TutorialVC: UIPageViewController {
 
         return viewControllers
         }()
-}
 
-extension TutorialVC: UIPageViewControllerDataSource {
+
+    // MARK: Delegate functions
+
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        pageControl?.currentPage = (viewControllers!.last as! TutorialPageVC).nextPage - 1
+    }
+
+
+    // MARK: Datasource functions
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         return tutorialViewControllers[(viewController as! TutorialPageVC).previousPage]
@@ -66,12 +84,5 @@ extension TutorialVC: UIPageViewControllerDataSource {
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         return tutorialViewControllers[(viewController as! TutorialPageVC).nextPage]
-    }
-}
-
-extension TutorialVC: UIPageViewControllerDelegate {
-
-    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        pageControl?.currentPage = (viewControllers!.last as! TutorialPageVC).nextPage - 1
     }
 }

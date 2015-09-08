@@ -11,9 +11,17 @@ import NAChloride
 
 class PasswordManager {
 
+
+    // MARK: Properties
+
     static let sharedInstance = PasswordManager()
 
+
+    // MARK: Lifecycle
+
     init() {
+
+        // Call this because the extension can be used before the app is launched
         PasswordManager.setInitialDefaultLength()
     }
 
@@ -29,22 +37,25 @@ class PasswordManager {
 
             // DEBUG
 
-//          print("password used: \(masterPassword)")
-//          print("userID user: \(userID)")
-//          print("password generated: \(digest.substringWithRange(range))")
+            // print("password used: \(masterPassword)")
+            // print("userID user: \(userID)")
+            // print("password generated: \(digest.substringWithRange(range))")
 
             completion?(digest.substringWithRange(range))
         }
     }
 
+    // Set the password length in the defaults if there isn't one set
     class func setInitialDefaultLength() {
 
-        let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)!
-
-        if !defaults.boolForKey(Constants.Defaults.opened) {
-            defaults.setBool(true, forKey: Constants.Defaults.opened)
-            defaults.setInteger(24, forKey: Constants.Defaults.length)
-            defaults.synchronize()
+        guard let defaults = NSUserDefaults(suiteName: Constants.Defaults.suiteName)
+            where !defaults.boolForKey(Constants.Defaults.opened) else
+        {
+            return
         }
+
+        defaults.setBool(true, forKey: Constants.Defaults.opened)
+        defaults.setInteger(24, forKey: Constants.Defaults.length)
+        defaults.synchronize()
     }
 }

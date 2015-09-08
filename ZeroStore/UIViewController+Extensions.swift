@@ -10,6 +10,7 @@ import UIKit
 
 extension UIViewController {
 
+    // Shows an alert with an OK button and the given title and message
     func showGenericAlert(title: String?, message: String?) {
 
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
