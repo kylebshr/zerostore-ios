@@ -79,28 +79,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="fAX-Qu-0jw">
-                                <rect key="frame" x="20" y="176.5" width="560" height="201"/>
+                                <rect key="frame" x="20" y="176" width="560" height="201"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="201" id="MfO-KB-2Fx"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifP-gA-7dq">
-                                <rect key="frame" x="180" y="20" width="240" height="148.5"/>
+                                <rect key="frame" x="180" y="20" width="240" height="148"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="U2p-sn-RGz"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBT-94-fC4">
-                                <rect key="frame" x="180" y="414.5" width="240" height="148.5"/>
+                                <rect key="frame" x="180" y="415" width="240" height="148"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="rij-MR-tGL"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a tutorial!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CD-zF-xaq">
-                                <rect key="frame" x="20" y="385.5" width="560" height="20.5"/>
+                                <rect key="frame" x="20" y="385" width="560" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>

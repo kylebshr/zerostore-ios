@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271D37041B9DEEB3008FF159 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D37031B9DEEB3008FF159 /* About.storyboard */; settings = {ASSET_TAGS = (); }; };
+		271D37081B9DEF85008FF159 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D37071B9DEF85008FF159 /* AboutVC.swift */; settings = {ASSET_TAGS = (); }; };
 		272B7ACC1B98C524005785AA /* ActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B7ACB1B98C524005785AA /* ActionVC.swift */; };
 		272B7ACF1B98C524005785AA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272B7ACD1B98C524005785AA /* MainInterface.storyboard */; };
 		272B7AD31B98C524005785AA /* EnterPassword.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 272B7AC91B98C524005785AA /* EnterPassword.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -80,6 +82,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		271D37031B9DEEB3008FF159 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		271D37071B9DEF85008FF159 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		272B7AC91B98C524005785AA /* EnterPassword.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnterPassword.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		272B7ACB1B98C524005785AA /* ActionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionVC.swift; sourceTree = "<group>"; };
 		272B7ACE1B98C524005785AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -161,6 +165,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		271D37051B9DEF71008FF159 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				271D37071B9DEF85008FF159 /* AboutVC.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		271D37061B9DEF78008FF159 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				27FAF8F11B98926C00619BD3 /* SettingsVC.swift */,
+				27F53D571B99004400550CBE /* ChangePasswordVC.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		272B7ACA1B98C524005785AA /* EnterPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,9 +225,9 @@
 		27F53D551B99001300550CBE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				27FAF8F11B98926C00619BD3 /* SettingsVC.swift */,
-				27F53D571B99004400550CBE /* ChangePasswordVC.swift */,
+				271D37061B9DEF78008FF159 /* Main */,
 				274AF6C81B9B8C0D00AF6DFB /* Tutorial */,
+				271D37051B9DEF71008FF159 /* About */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -216,6 +237,7 @@
 			children = (
 				27FAF8F31B98926C00619BD3 /* Main.storyboard */,
 				27414B2B1B9A88BF00B490C5 /* Tutorial.storyboard */,
+				271D37031B9DEEB3008FF159 /* About.storyboard */,
 				2794713E1B9A0B8A001359C7 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
@@ -463,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				274AF6C51B9B757F00AF6DFB /* Main.storyboard in Resources */,
+				271D37041B9DEEB3008FF159 /* About.storyboard in Resources */,
 				2794713F1B9A0B8A001359C7 /* LaunchScreen.storyboard in Resources */,
 				27414B2C1B9A88BF00B490C5 /* Tutorial.storyboard in Resources */,
 				27FAF8F71B98926C00619BD3 /* Images.xcassets in Resources */,
@@ -575,6 +598,7 @@
 				27FAF8F21B98926C00619BD3 /* SettingsVC.swift in Sources */,
 				27FAF8F01B98926C00619BD3 /* AppDelegate.swift in Sources */,
 				27365DA61B9916C20036A180 /* NoPasteTextField.swift in Sources */,
+				271D37081B9DEF85008FF159 /* AboutVC.swift in Sources */,
 				274AF6C71B9B8C0900AF6DFB /* TutorialPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

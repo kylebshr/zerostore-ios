@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,69 +17,10 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
-                            <tableViewSection id="VSF-LI-B8t">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="mi1-Gd-JNV">
-                                        <rect key="frame" x="0.0" y="99" width="600" height="120"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mi1-Gd-JNV" id="kWe-nt-gvP">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LargeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jpv-wv-gpx">
-                                                    <rect key="frame" x="242" y="1" width="117" height="117"/>
-                                                    <animations/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="jpv-wv-gpx" secondAttribute="height" multiplier="1:1" id="efu-H4-8gU"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="jpv-wv-gpx" secondAttribute="bottom" constant="1" id="are-cv-ij9"/>
-                                                <constraint firstItem="jpv-wv-gpx" firstAttribute="centerX" secondItem="kWe-nt-gvP" secondAttribute="centerX" id="cG6-LP-xAk"/>
-                                                <constraint firstItem="jpv-wv-gpx" firstAttribute="top" secondItem="kWe-nt-gvP" secondAttribute="top" constant="1" id="dYb-oq-mc3"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="" footerTitle="" id="mf9-WO-fnm">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="Q6s-rX-2z4">
-                                        <rect key="frame" x="0.0" y="255" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q6s-rX-2z4" id="YJq-Ws-b3k">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Use ZeroStore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-P5-Hoa">
-                                                    <rect key="frame" x="15" y="11" width="170" height="21"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hfD-P5-Hoa" secondAttribute="bottom" constant="3.5" id="UV3-Hh-f2G"/>
-                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="top" secondItem="YJq-Ws-b3k" secondAttribute="topMargin" constant="3" id="hSx-XK-KAR"/>
-                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="leading" secondItem="YJq-Ws-b3k" secondAttribute="leading" constant="15" id="xdZ-6u-h23"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <segue destination="T1e-BR-CeW" kind="presentation" modalPresentationStyle="formSheet" id="EXq-hl-clR"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                             <tableViewSection headerTitle="Settings" id="2tM-Cw-Baf">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="ktc-dq-IVt">
-                                        <rect key="frame" x="0.0" y="349" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ktc-dq-IVt" id="qcS-aa-h6y">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -114,22 +54,15 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Password" id="EhW-YR-pZ7">
-                                <string key="footerTitle">Set your password here if you want to use TouchID to fetch your account passwords. This is kept securely in the iOS keychain, and never sent anywhere else. 
-
-If you don't set your password here, we never save it anywhere.</string>
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="hqQ-R2-hmH">
-                                        <rect key="frame" x="0.0" y="443" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="Q6s-rX-2z4">
+                                        <rect key="frame" x="0.0" y="157.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqQ-R2-hmH" id="eE0-bf-NM6">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q6s-rX-2z4" id="YJq-Ws-b3k">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Saved Master Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL2-eN-V4x">
-                                                    <rect key="frame" x="15" y="11" width="249" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Use ZeroStore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-P5-Hoa">
+                                                    <rect key="frame" x="15" y="11" width="170" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,15 +71,52 @@ If you don't set your password here, we never save it anywhere.</string>
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="SL2-eN-V4x" secondAttribute="bottom" constant="3.5" id="70i-SZ-hWa"/>
-                                                <constraint firstItem="SL2-eN-V4x" firstAttribute="leading" secondItem="eE0-bf-NM6" secondAttribute="leading" constant="15" id="Xhf-b5-DSB"/>
-                                                <constraint firstItem="SL2-eN-V4x" firstAttribute="top" secondItem="eE0-bf-NM6" secondAttribute="topMargin" constant="3" id="bxs-Mg-350"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hfD-P5-Hoa" secondAttribute="bottom" constant="3.5" id="UV3-Hh-f2G"/>
+                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="top" secondItem="YJq-Ws-b3k" secondAttribute="topMargin" constant="3" id="hSx-XK-KAR"/>
+                                                <constraint firstItem="hfD-P5-Hoa" firstAttribute="leading" secondItem="YJq-Ws-b3k" secondAttribute="leading" constant="15" id="xdZ-6u-h23"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="T1e-BR-CeW" kind="presentation" modalPresentationStyle="formSheet" id="EXq-hl-clR"/>
+                                        </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="FNF-sy-pf3">
+                                        <rect key="frame" x="0.0" y="201.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FNF-sy-pf3" id="Tvz-Fq-PZv">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-tz-t5u">
+                                                    <rect key="frame" x="15" y="11" width="47" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="fuq-tz-t5u" firstAttribute="leading" secondItem="Tvz-Fq-PZv" secondAttribute="leading" constant="15" id="Nzb-aC-FRr"/>
+                                                <constraint firstItem="fuq-tz-t5u" firstAttribute="top" secondItem="Tvz-Fq-PZv" secondAttribute="topMargin" constant="3" id="btK-gn-xRL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fuq-tz-t5u" secondAttribute="bottom" constant="3.5" id="zQ0-Z6-eAc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="tZb-ca-0n9" kind="presentation" modalPresentationStyle="formSheet" id="vrV-Qa-lRA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Password" id="EhW-YR-pZ7">
+                                <string key="footerTitle">Set your password here if you want to use TouchID to fetch your account passwords. This is kept securely in the iOS keychain, and never sent anywhere else. 
+
+If you don't set your password here, we never save it anywhere.</string>
+                                <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="y3X-tq-upf">
-                                        <rect key="frame" x="0.0" y="487" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="295.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y3X-tq-upf" id="bgR-RN-AFF">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -172,7 +142,34 @@ If you don't set your password here, we never save it anywhere.</string>
                                             <segue destination="is4-k7-QKS" kind="presentation" modalPresentationStyle="formSheet" id="syC-Dw-yHJ"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="hqQ-R2-hmH">
+                                        <rect key="frame" x="0.0" y="339.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqQ-R2-hmH" id="eE0-bf-NM6">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Saved Master Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL2-eN-V4x">
+                                                    <rect key="frame" x="15" y="11" width="249" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="SL2-eN-V4x" secondAttribute="bottom" constant="3.5" id="70i-SZ-hWa"/>
+                                                <constraint firstItem="SL2-eN-V4x" firstAttribute="leading" secondItem="eE0-bf-NM6" secondAttribute="leading" constant="15" id="Xhf-b5-DSB"/>
+                                                <constraint firstItem="SL2-eN-V4x" firstAttribute="top" secondItem="eE0-bf-NM6" secondAttribute="topMargin" constant="3" id="bxs-Mg-350"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
                                 </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" footerTitle="" id="mf9-WO-fnm">
+                                <cells/>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -197,7 +194,15 @@ If you don't set your password here, we never save it anywhere.</string>
                 <viewControllerPlaceholder storyboardName="Tutorial" id="T1e-BR-CeW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4l-wI-93o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625.5" y="116"/>
+            <point key="canvasLocation" x="1578.5" y="40"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="y8h-O5-mVO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="About" id="tZb-ca-0n9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sso-vF-tZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573.5" y="192"/>
         </scene>
         <!--Set Master Password-->
         <scene sceneID="zEI-kd-HcR">
@@ -357,8 +362,5 @@ If you don't set your password here, we never save it anywhere.</string>
             <point key="canvasLocation" x="301" y="922"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="LargeIcon" width="118" height="118"/>
-    </resources>
     <color key="tintColor" red="0.50588235290000005" green="0.76862745099999996" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
