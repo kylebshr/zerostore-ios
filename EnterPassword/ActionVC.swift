@@ -40,6 +40,7 @@ class ActionVC: UITableViewController, UITextFieldDelegate {
     }
 
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+
         return UIInterfaceOrientationMask.Portrait
     }
     
@@ -90,13 +91,14 @@ class ActionVC: UITableViewController, UITextFieldDelegate {
     }
 
     func generatePasswordFromTouchID(success: Bool, error: NSError?) {
+
         if success, let password = self.getMasterPasswordFromKeychain() {
             NSOperationQueue.mainQueue().addOperationWithBlock { _ in
                 self.masterPasswordTextField.text = password
                 self.generatePassword()
             }
         }
-        else if let code = error?.code where code == LAError.UserCancel.rawValue {
+        else {
             NSOperationQueue.mainQueue().addOperationWithBlock { _ in
                 self.masterPasswordTextField.becomeFirstResponder()
             }
@@ -104,6 +106,7 @@ class ActionVC: UITableViewController, UITextFieldDelegate {
     }
 
     func getMasterPasswordFromKeychain() -> String? {
+
         let password = SSKeychain.passwordForService(Constants.Keychain.service, account: Constants.Keychain.account)
         return password
     }
@@ -148,6 +151,7 @@ class ActionVC: UITableViewController, UITextFieldDelegate {
     }
 
     func enableActivity(enabled: Bool) {
+
         enabled ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
         tableView.userInteractionEnabled = !enabled
     }
@@ -156,6 +160,7 @@ class ActionVC: UITableViewController, UITextFieldDelegate {
     // MARK: Delegate functions
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
+
         generatePassword()
         return true
     }
