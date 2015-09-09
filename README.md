@@ -1,10 +1,12 @@
-## About
-
-[![Build Status](https://travis-ci.org/kylebshr/zerostore-ios.svg?branch=develop)](https://travis-ci.org/kylebshr/zerostore-ios)
+## ZeroStore for iOS [![Build Status](https://travis-ci.org/kylebshr/zerostore-ios.svg?branch=develop)](https://travis-ci.org/kylebshr/zerostore-ios)
 
 An iOS implementation of [zerostore](https://github.com/joseph346/zerostore) by joseph346. This was made mostly for fun — I'm not a cryptogrography expert, and cannot vouch for the security of this project. 
 
 Includes an app extension for use in browsers.
+
+[![Available on the AppStore](http://cl.ly/WouG/Download_on_the_App_Store_Badge_US-UK_135x40.svg)](#) 
+
+(Coming Soon)
 
 ## What is this, and why does it exist?
 
