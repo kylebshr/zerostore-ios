@@ -11,4 +11,4 @@ script: ./xctool/xctool.sh -workspace ZeroStore.xcworkspace -scheme ZeroStoreTes
 
 before_install:
   - git clone https://github.com/facebook/xctool.git
-  - gem install cocoapods -v '0.38.2'
+
