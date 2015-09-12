@@ -4,9 +4,7 @@ An iOS implementation of [zerostore](https://github.com/joseph346/zerostore) by 
 
 Includes an app extension for use in browsers.
 
-[![Available on the AppStore](http://cl.ly/WouG/Download_on_the_App_Store_Badge_US-UK_135x40.svg)](#) 
-
-(Coming Soon)
+[![Available on the AppStore](http://cl.ly/WouG/Download_on_the_App_Store_Badge_US-UK_135x40.svg)](https://itunes.apple.com/us/app/zerostore-password-storage/id1037141587?mt=8) 
 
 ## What is this, and why does it exist?
 
